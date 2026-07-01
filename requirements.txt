@@ -1,0 +1,10 @@
+ai2thor
+pillow
+opencv-python
+numpy
+pyyaml
+tqdm
+jsonschema
+pytest
+openai
+httpx

@@ -1,0 +1,7 @@
+enabled: true
+scene: FloorPlan1
+shelf_id: shelf_FloorPlan1_010
+source_object_id: "CounterTop|-00.08|+01.15|00.00"
+source_object_type: CounterTop
+semantic_zone: open_shelf
+description: "Default one-shelf retail demo surface."

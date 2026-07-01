@@ -1,0 +1,48 @@
+{
+  "episode_id": "episode_000000",
+  "scene": "FloorPlan1",
+  "random_seed": 0,
+  "instruction": "帮我找一个健康食品",
+  "replay_exact": false,
+  "replay_note": "demo_placeholder observations are copied from generated data, not re-simulated",
+  "steps": [
+    {
+      "step_idx": 0,
+      "action": "navigate_to_shelf",
+      "args": {
+        "shelf_id": "shelf_demo_001"
+      },
+      "rgb_replay_path": "/Users/yuaay/Documents/Embodied_AI/retail_thor_demo/outputs/replay/episode_000000_replay_step_000_rgb.png"
+    },
+    {
+      "step_idx": 1,
+      "action": "search_object",
+      "args": {
+        "query": "帮我找一个健康食品"
+      },
+      "rgb_replay_path": "/Users/yuaay/Documents/Embodied_AI/retail_thor_demo/outputs/replay/episode_000000_replay_step_001_rgb.png"
+    },
+    {
+      "step_idx": 2,
+      "action": "look_at",
+      "args": {
+        "object_id": "Apple|demo"
+      },
+      "rgb_replay_path": "/Users/yuaay/Documents/Embodied_AI/retail_thor_demo/outputs/replay/episode_000000_replay_step_002_rgb.png"
+    },
+    {
+      "step_idx": 3,
+      "action": "answer_user",
+      "args": {
+        "text": "我找到了苹果。"
+      },
+      "rgb_replay_path": "/Users/yuaay/Documents/Embodied_AI/retail_thor_demo/outputs/replay/episode_000000_replay_step_003_rgb.png"
+    },
+    {
+      "step_idx": 4,
+      "action": "finish",
+      "args": {},
+      "rgb_replay_path": "/Users/yuaay/Documents/Embodied_AI/retail_thor_demo/outputs/replay/episode_000000_replay_step_004_rgb.png"
+    }
+  ]
+}

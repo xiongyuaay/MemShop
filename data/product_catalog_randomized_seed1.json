@@ -1,0 +1,164 @@
+[
+  {
+    "product_id": "FloorPlan1_Bread_000",
+    "object_id": "Bread|+00.36|+01.18|+00.50",
+    "object_type": "Bread",
+    "scene": "FloorPlan1",
+    "shelf_id": "shelf_FloorPlan1_003",
+    "source_receptacle_id": "CounterTop|-00.08|+01.15|00.00",
+    "display_name_zh": "面包",
+    "display_name_en": "bread",
+    "category": "bakery",
+    "attributes": [
+      "breakfast",
+      "staple_food"
+    ],
+    "synonyms_zh": [
+      "面包",
+      "早餐"
+    ],
+    "brand": "晨光烘焙",
+    "price": 14,
+    "stock_status": "in_stock",
+    "pickupable": true,
+    "visible_at_start": false,
+    "position": {
+      "x": 0.3554859757423401,
+      "y": 1.1770490407943726,
+      "z": 0.5045477747917175
+    },
+    "parent_receptacles": [
+      "CounterTop|-00.08|+01.15|00.00"
+    ],
+    "is_food": true,
+    "is_pickup_required": true,
+    "scene_randomization": {
+      "randomized": true,
+      "random_seed": 1,
+      "random_spawn_success": true,
+      "error_message": ""
+    }
+  },
+  {
+    "product_id": "FloorPlan1_Plate_000",
+    "object_id": "Plate|+00.08|+01.11|00.00",
+    "object_type": "Plate",
+    "scene": "FloorPlan1",
+    "shelf_id": "shelf_FloorPlan1_003",
+    "source_receptacle_id": "CounterTop|-00.08|+01.15|00.00",
+    "display_name_zh": "盘子",
+    "display_name_en": "plate",
+    "category": "container",
+    "attributes": [
+      "container",
+      "placement_target"
+    ],
+    "synonyms_zh": [
+      "盘子",
+      "餐盘"
+    ],
+    "brand": "日用优选",
+    "price": 11,
+    "stock_status": "in_stock",
+    "pickupable": true,
+    "visible_at_start": false,
+    "position": {
+      "x": 0.07909541577100754,
+      "y": 1.1077032089233398,
+      "z": -0.001000046730041504
+    },
+    "parent_receptacles": [
+      "CounterTop|-00.08|+01.15|00.00"
+    ],
+    "is_food": false,
+    "is_pickup_required": false,
+    "scene_randomization": {
+      "randomized": true,
+      "random_seed": 1,
+      "random_spawn_success": true,
+      "error_message": ""
+    }
+  },
+  {
+    "product_id": "FloorPlan1_Tomato_000",
+    "object_id": "Tomato|-00.34|+01.14|+00.76",
+    "object_type": "Tomato",
+    "scene": "FloorPlan1",
+    "shelf_id": "shelf_FloorPlan1_003",
+    "source_receptacle_id": "CounterTop|-00.08|+01.15|00.00",
+    "display_name_zh": "番茄",
+    "display_name_en": "tomato",
+    "category": "vegetable",
+    "attributes": [
+      "fresh",
+      "vegetable",
+      "healthy"
+    ],
+    "synonyms_zh": [
+      "番茄",
+      "西红柿"
+    ],
+    "brand": "田园",
+    "price": 6,
+    "stock_status": "in_stock",
+    "pickupable": true,
+    "visible_at_start": false,
+    "position": {
+      "x": -0.3354904055595398,
+      "y": 1.143612265586853,
+      "z": 0.7573217153549194
+    },
+    "parent_receptacles": [
+      "CounterTop|-00.08|+01.15|00.00"
+    ],
+    "is_food": true,
+    "is_pickup_required": true,
+    "scene_randomization": {
+      "randomized": true,
+      "random_seed": 1,
+      "random_spawn_success": true,
+      "error_message": ""
+    }
+  },
+  {
+    "product_id": "FloorPlan1_Lettuce_000",
+    "object_id": "Lettuce|+00.08|+01.18|+00.25",
+    "object_type": "Lettuce",
+    "scene": "FloorPlan1",
+    "shelf_id": "shelf_FloorPlan1_003",
+    "source_receptacle_id": "CounterTop|-00.08|+01.15|00.00",
+    "display_name_zh": "生菜",
+    "display_name_en": "lettuce",
+    "category": "vegetable",
+    "attributes": [
+      "fresh",
+      "vegetable",
+      "healthy"
+    ],
+    "synonyms_zh": [
+      "生菜",
+      "绿叶菜"
+    ],
+    "brand": "每日鲜蔬",
+    "price": 4,
+    "stock_status": "in_stock",
+    "pickupable": true,
+    "visible_at_start": false,
+    "position": {
+      "x": 0.07909541577100754,
+      "y": 1.1803480386734009,
+      "z": 0.2517738342285156
+    },
+    "parent_receptacles": [
+      "CounterTop|-00.08|+01.15|00.00"
+    ],
+    "is_food": true,
+    "is_pickup_required": true,
+    "scene_randomization": {
+      "randomized": true,
+      "random_seed": 1,
+      "random_spawn_success": true,
+      "error_message": ""
+    }
+  }
+]

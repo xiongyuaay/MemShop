@@ -1,0 +1,168 @@
+Apple:
+  display_name_zh: 苹果
+  display_name_en: apple
+  category: fruit
+  attributes: [fresh, healthy, low_sugar]
+  synonyms_zh: [水果, 苹果]
+  price_range: [3, 8]
+  brand_pool: [本地果园, 每日鲜果]
+  substitute_policy: [same_category, shared_attributes]
+  is_food: true
+  is_pickup_required: true
+
+Bread:
+  display_name_zh: 面包
+  display_name_en: bread
+  category: bakery
+  attributes: [breakfast, staple_food]
+  synonyms_zh: [面包, 早餐]
+  price_range: [6, 15]
+  brand_pool: [晨光烘焙, 麦香]
+  substitute_policy: [same_category, shared_attributes]
+  is_food: true
+  is_pickup_required: true
+
+Bottle:
+  display_name_zh: 饮料
+  display_name_en: bottled drink
+  category: drink
+  attributes: [bottled, cold_drink]
+  synonyms_zh: [瓶装饮料, 饮料]
+  price_range: [3, 10]
+  brand_pool: [清泉, 冰爽]
+  substitute_policy: [same_category, shared_attributes]
+  is_food: true
+  is_pickup_required: true
+
+Mug:
+  display_name_zh: 杯子
+  display_name_en: mug
+  category: container
+  attributes: [container, daily_goods]
+  synonyms_zh: [杯子, 马克杯]
+  price_range: [8, 30]
+  brand_pool: [日用优选]
+  substitute_policy: [same_category]
+  is_food: false
+  is_pickup_required: true
+
+Tomato:
+  display_name_zh: 番茄
+  display_name_en: tomato
+  category: vegetable
+  attributes: [fresh, vegetable, healthy]
+  synonyms_zh: [番茄, 西红柿]
+  price_range: [2, 8]
+  brand_pool: [田园, 每日鲜蔬]
+  substitute_policy: [same_category, shared_attributes]
+  is_food: true
+  is_pickup_required: true
+
+Lettuce:
+  display_name_zh: 生菜
+  display_name_en: lettuce
+  category: vegetable
+  attributes: [fresh, vegetable, healthy]
+  synonyms_zh: [生菜, 绿叶菜]
+  price_range: [3, 9]
+  brand_pool: [田园, 每日鲜蔬]
+  substitute_policy: [same_category, shared_attributes]
+  is_food: true
+  is_pickup_required: true
+
+Potato:
+  display_name_zh: 土豆
+  display_name_en: potato
+  category: vegetable
+  attributes: [vegetable, staple_food]
+  synonyms_zh: [土豆, 马铃薯]
+  price_range: [2, 6]
+  brand_pool: [田园]
+  substitute_policy: [same_category, shared_attributes]
+  is_food: true
+  is_pickup_required: true
+
+Egg:
+  display_name_zh: 鸡蛋
+  display_name_en: egg
+  category: dairy_or_protein
+  attributes: [protein, breakfast]
+  synonyms_zh: [鸡蛋, 蛋]
+  price_range: [5, 15]
+  brand_pool: [农场鲜蛋]
+  substitute_policy: [shared_attributes]
+  is_food: true
+  is_pickup_required: true
+
+Cup:
+  display_name_zh: 杯子
+  display_name_en: cup
+  category: container
+  attributes: [container, daily_goods]
+  synonyms_zh: [杯子]
+  price_range: [5, 20]
+  brand_pool: [日用优选]
+  substitute_policy: [same_category]
+  is_food: false
+  is_pickup_required: true
+
+Plate:
+  display_name_zh: 盘子
+  display_name_en: plate
+  category: container
+  attributes: [container, placement_target]
+  synonyms_zh: [盘子, 餐盘]
+  price_range: [5, 20]
+  brand_pool: [日用优选]
+  substitute_policy: [same_category]
+  is_food: false
+  is_pickup_required: false
+
+Bowl:
+  display_name_zh: 碗
+  display_name_en: bowl
+  category: container
+  attributes: [container, placement_target, cart_like]
+  synonyms_zh: [碗, 容器]
+  price_range: [5, 20]
+  brand_pool: [日用优选]
+  substitute_policy: [same_category]
+  is_food: false
+  is_pickup_required: false
+
+Knife:
+  display_name_zh: 刀
+  display_name_en: knife
+  category: tool
+  attributes: [sharp]
+  synonyms_zh: [刀]
+  price_range: [10, 30]
+  brand_pool: [工具]
+  substitute_policy: []
+  is_food: false
+  is_pickup_required: true
+  exclude_from_catalog: true
+
+Fork:
+  display_name_zh: 叉子
+  display_name_en: fork
+  category: utensil
+  attributes: [utensil]
+  synonyms_zh: [叉子]
+  price_range: [5, 20]
+  brand_pool: [日用优选]
+  substitute_policy: [same_category]
+  is_food: false
+  is_pickup_required: true
+
+Spoon:
+  display_name_zh: 勺子
+  display_name_en: spoon
+  category: utensil
+  attributes: [utensil]
+  synonyms_zh: [勺子]
+  price_range: [5, 20]
+  brand_pool: [日用优选]
+  substitute_policy: [same_category]
+  is_food: false
+  is_pickup_required: true

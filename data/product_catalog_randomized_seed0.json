@@ -1,0 +1,40 @@
+[
+  {
+    "product_id": "FloorPlan1_Fork_000",
+    "object_id": "Fork|-00.06|+01.11|-00.51",
+    "object_type": "Fork",
+    "scene": "FloorPlan1",
+    "shelf_id": "shelf_FloorPlan1_003",
+    "source_receptacle_id": "CounterTop|-00.08|+01.15|00.00",
+    "display_name_zh": "叉子",
+    "display_name_en": "fork",
+    "category": "utensil",
+    "attributes": [
+      "utensil"
+    ],
+    "synonyms_zh": [
+      "叉子"
+    ],
+    "brand": "日用优选",
+    "price": 9,
+    "stock_status": "in_stock",
+    "pickupable": true,
+    "visible_at_start": false,
+    "position": {
+      "x": -0.05909985303878784,
+      "y": 1.1091095209121704,
+      "z": -0.5065479278564453
+    },
+    "parent_receptacles": [
+      "CounterTop|-00.08|+01.15|00.00"
+    ],
+    "is_food": false,
+    "is_pickup_required": true,
+    "scene_randomization": {
+      "randomized": true,
+      "random_seed": 0,
+      "random_spawn_success": true,
+      "error_message": ""
+    }
+  }
+]

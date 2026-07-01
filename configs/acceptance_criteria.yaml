@@ -1,0 +1,20 @@
+demo:
+  min_episodes: 20
+  required_task_types:
+    - find_product
+    - dialogue_find_or_substitute
+    - pick_and_place
+  min_success: 10
+  min_substitute_samples: 3
+  min_pick_and_place_success: 3
+
+small_scale:
+  min_episodes: 500
+  min_scenes: 10
+  required_task_types:
+    - find_product
+    - dialogue_find_or_substitute
+    - pick_and_place
+  require_success_rate: true
+  require_failure_reason_distribution: true
+  require_balanced_task_types: true

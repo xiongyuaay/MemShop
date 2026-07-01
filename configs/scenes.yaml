@@ -1,0 +1,21 @@
+ai2thor:
+  # ai2thor 5.0.0's default commit currently lacks an OSXIntel64 build.
+  # This commit was verified to have a macOS build during setup.
+  macos_commit_id: 4d2e1f1d04051fafcd9794b810f227551121253a
+  width: 800
+  height: 600
+  gridSize: 0.25
+  renderDepthImage: true
+  renderInstanceSegmentation: true
+  visibilityDistance: 1.5
+
+demo_scenes:
+  - FloorPlan1
+  - FloorPlan2
+  - FloorPlan3
+  - FloorPlan4
+  - FloorPlan5
+
+stable_kitchen_scenes:
+  start: FloorPlan1
+  end: FloorPlan30

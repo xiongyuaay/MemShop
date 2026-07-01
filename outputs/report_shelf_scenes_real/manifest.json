@@ -1,0 +1,88 @@
+{
+  "source": "ai2thor_real_render",
+  "scene": "FloorPlan1",
+  "shelf": {
+    "enabled": true,
+    "scene": "FloorPlan1",
+    "shelf_id": "ai2thor_shelf_FloorPlan1_000",
+    "source_object_type": "Shelf",
+    "source_object_ids": [
+      "Shelf|+01.75|+00.17|-02.56",
+      "Shelf|+01.75|+00.55|-02.56",
+      "Shelf|+01.75|+00.88|-02.56"
+    ],
+    "focus_object_id": "Shelf|+01.75|+00.55|-02.56",
+    "verified_probe": {
+      "position": {
+        "x": 1.75,
+        "y": 0.900999128818512,
+        "z": -1.25
+      },
+      "rotation": {
+        "x": 0,
+        "y": 179.9557435,
+        "z": 0
+      },
+      "horizon": 10,
+      "standing": true
+    },
+    "randomization": {
+      "action": "InitialRandomSpawn",
+      "randomSeed": 8,
+      "forceVisible": true,
+      "numPlacementAttempts": 5
+    },
+    "excluded_object_types": [
+      "Statue"
+    ],
+    "semantic_zone": "single_retail_shelf",
+    "description": "AI2-THOR native Shelf objects used as one bookcase-style retail shelf."
+  },
+  "object_policy": "AI2-THOR native objects only",
+  "shelf_randomization": {
+    "action": "InitialRandomSpawn",
+    "randomSeed": 8,
+    "forceVisible": true,
+    "numPlacementAttempts": 5
+  },
+  "excluded_object_types": [
+    "Statue"
+  ],
+  "view_policy": "cropped_single_shelf_focus",
+  "allowed_object_types": [
+    "Apple",
+    "Book",
+    "Bottle",
+    "Bowl",
+    "Bread",
+    "CreditCard",
+    "Cup",
+    "Egg",
+    "Mug",
+    "Plate",
+    "Potato",
+    "SaltShaker",
+    "SoapBottle",
+    "Spoon",
+    "Tomato",
+    "Vase"
+  ],
+  "rendered_object_types": [
+    "CreditCard",
+    "Egg",
+    "Potato",
+    "SaltShaker",
+    "SoapBottle",
+    "Spoon",
+    "Vase"
+  ],
+  "screenshots": [
+    {
+      "scene_id": "real_single_shelf",
+      "path": "real_single_shelf.png",
+      "caption": "Real AI2-THOR render of one receptacle used as a retail shelf."
+    }
+  ],
+  "raw_screenshot_path": "real_single_shelf_raw.png",
+  "metadata_path": "real_single_shelf_metadata.json"
+}

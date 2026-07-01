@@ -1,0 +1,674 @@
+{
+  "episode_id": "episode_000008",
+  "schema_version": "0.1.0",
+  "backend": "ai2thor",
+  "scene": "FloorPlan1",
+  "random_seed": 0,
+  "capability_family": [
+    "loco_manipulation"
+  ],
+  "task_type": "pick_and_place",
+  "prompt": "帮我把早餐食品放到台面上",
+  "target": {
+    "constraint": {
+      "attribute": "breakfast"
+    },
+    "candidate_product_ids": [
+      "FloorPlan1_Bread_000",
+      "FloorPlan1_Egg_000"
+    ],
+    "placement": "counter",
+    "target_product_id": "FloorPlan1_Bread_000",
+    "target_object_id": "Bread|+01.96|+00.63|-02.64"
+  },
+  "episode_idx": 8,
+  "max_steps": 20,
+  "instruction": "帮我把早餐食品放到台面上",
+  "initial_state": {
+    "agent_pose": {},
+    "held_object": null
+  },
+  "product_catalog": [
+    {
+      "product_id": "FloorPlan1_Bread_000",
+      "object_id": "Bread|+01.96|+00.63|-02.64",
+      "object_type": "Bread",
+      "scene": "FloorPlan1",
+      "shelf_id": "shelf_FloorPlan1_022",
+      "display_name_zh": "面包",
+      "display_name_en": "bread",
+      "category": "bakery",
+      "attributes": [
+        "breakfast",
+        "staple_food"
+      ],
+      "synonyms_zh": [
+        "面包",
+        "早餐"
+      ],
+      "brand": "晨光烘焙",
+      "price": 7,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": 1.9584087133407593,
+        "y": 0.629520058631897,
+        "z": -2.644106149673462
+      },
+      "parent_receptacles": [
+        "Shelf|+01.75|+00.55|-02.56"
+      ],
+      "is_food": true,
+      "is_pickup_required": true,
+      "scene_randomization": {
+        "randomized": true,
+        "random_seed": 0,
+        "random_spawn_success": true,
+        "error_message": ""
+      }
+    },
+    {
+      "product_id": "FloorPlan1_Fork_000",
+      "object_id": "Fork|-00.06|+01.11|-00.51",
+      "object_type": "Fork",
+      "scene": "FloorPlan1",
+      "shelf_id": "shelf_FloorPlan1_003",
+      "display_name_zh": "叉子",
+      "display_name_en": "fork",
+      "category": "utensil",
+      "attributes": [
+        "utensil"
+      ],
+      "synonyms_zh": [
+        "叉子"
+      ],
+      "brand": "日用优选",
+      "price": 9,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": -0.05909985303878784,
+        "y": 1.1091095209121704,
+        "z": -0.5065479278564453
+      },
+      "parent_receptacles": [
+        "CounterTop|-00.08|+01.15|00.00"
+      ],
+      "is_food": false,
+      "is_pickup_required": true,
+      "scene_randomization": {
+        "randomized": true,
+        "random_seed": 0,
+        "random_spawn_success": true,
+        "error_message": ""
+      }
+    },
+    {
+      "product_id": "FloorPlan1_Potato_000",
+      "object_id": "Potato|+00.58|+00.94|-02.41",
+      "object_type": "Potato",
+      "scene": "FloorPlan1",
+      "shelf_id": "shelf_FloorPlan1_005",
+      "display_name_zh": "土豆",
+      "display_name_en": "potato",
+      "category": "vegetable",
+      "attributes": [
+        "vegetable",
+        "staple_food"
+      ],
+      "synonyms_zh": [
+        "土豆",
+        "马铃薯"
+      ],
+      "brand": "田园",
+      "price": 4,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": 0.5826875567436218,
+        "y": 0.939028263092041,
+        "z": -2.4071834087371826
+      },
+      "parent_receptacles": [
+        "CounterTop|+00.69|+00.95|-02.48"
+      ],
+      "is_food": true,
+      "is_pickup_required": true,
+      "scene_randomization": {
+        "randomized": true,
+        "random_seed": 0,
+        "random_spawn_success": true,
+        "error_message": ""
+      }
+    },
+    {
+      "product_id": "FloorPlan1_Plate_000",
+      "object_id": "Plate|-01.44|+00.91|-02.64",
+      "object_type": "Plate",
+      "scene": "FloorPlan1",
+      "shelf_id": "shelf_FloorPlan1_020",
+      "display_name_zh": "盘子",
+      "display_name_en": "plate",
+      "category": "container",
+      "attributes": [
+        "container",
+        "placement_target"
+      ],
+      "synonyms_zh": [
+        "盘子",
+        "餐盘"
+      ],
+      "brand": "日用优选",
+      "price": 9,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": -1.4384262561798096,
+        "y": 0.9075031280517578,
+        "z": -2.6370861530303955
+      },
+      "parent_receptacles": [
+        "CounterTop|-01.87|+00.95|-01.21"
+      ],
+      "is_food": false,
+      "is_pickup_required": false,
+      "scene_randomization": {
+        "randomized": true,
+        "random_seed": 0,
+        "random_spawn_success": true,
+        "error_message": ""
+      }
+    },
+    {
+      "product_id": "FloorPlan1_Tomato_000",
+      "object_id": "Tomato|-02.10|+00.94|+00.23",
+      "object_type": "Tomato",
+      "scene": "FloorPlan1",
+      "shelf_id": "shelf_FloorPlan1_020",
+      "display_name_zh": "番茄",
+      "display_name_en": "tomato",
+      "category": "vegetable",
+      "attributes": [
+        "fresh",
+        "vegetable",
+        "healthy"
+      ],
+      "synonyms_zh": [
+        "番茄",
+        "西红柿"
+      ],
+      "brand": "每日鲜蔬",
+      "price": 3,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": true,
+      "position": {
+        "x": -2.100558280944824,
+        "y": 0.9434122443199158,
+        "z": 0.2308558225631714
+      },
+      "parent_receptacles": [
+        "CounterTop|-01.87|+00.95|-01.21"
+      ],
+      "is_food": true,
+      "is_pickup_required": true,
+      "scene_randomization": {
+        "randomized": true,
+        "random_seed": 0,
+        "random_spawn_success": true,
+        "error_message": ""
+      }
+    },
+    {
+      "product_id": "FloorPlan1_Egg_000",
+      "object_id": "Egg|+00.58|+00.94|-02.56",
+      "object_type": "Egg",
+      "scene": "FloorPlan1",
+      "shelf_id": "shelf_FloorPlan1_005",
+      "display_name_zh": "鸡蛋",
+      "display_name_en": "egg",
+      "category": "dairy_or_protein",
+      "attributes": [
+        "protein",
+        "breakfast"
+      ],
+      "synonyms_zh": [
+        "鸡蛋",
+        "蛋"
+      ],
+      "brand": "农场鲜蛋",
+      "price": 15,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": 0.5826875567436218,
+        "y": 0.9427894353866577,
+        "z": -2.560816526412964
+      },
+      "parent_receptacles": [
+        "CounterTop|+00.69|+00.95|-02.48"
+      ],
+      "is_food": true,
+      "is_pickup_required": true,
+      "scene_randomization": {
+        "randomized": true,
+        "random_seed": 0,
+        "random_spawn_success": true,
+        "error_message": ""
+      }
+    },
+    {
+      "product_id": "FloorPlan1_Bowl_000",
+      "object_id": "Bowl|+02.06|+00.89|-02.56",
+      "object_type": "Bowl",
+      "scene": "FloorPlan1",
+      "shelf_id": "shelf_FloorPlan1_021",
+      "display_name_zh": "碗",
+      "display_name_en": "bowl",
+      "category": "container",
+      "attributes": [
+        "container",
+        "placement_target",
+        "cart_like"
+      ],
+      "synonyms_zh": [
+        "碗",
+        "容器"
+      ],
+      "brand": "日用优选",
+      "price": 10,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": 2.0580713748931885,
+        "y": 0.8878653049468994,
+        "z": -2.5602171421051025
+      },
+      "parent_receptacles": [
+        "Shelf|+01.75|+00.88|-02.56"
+      ],
+      "is_food": false,
+      "is_pickup_required": false,
+      "scene_randomization": {
+        "randomized": true,
+        "random_seed": 0,
+        "random_spawn_success": true,
+        "error_message": ""
+      }
+    },
+    {
+      "product_id": "FloorPlan1_Lettuce_000",
+      "object_id": "Lettuce|+01.96|+00.63|-02.47",
+      "object_type": "Lettuce",
+      "scene": "FloorPlan1",
+      "shelf_id": "shelf_FloorPlan1_022",
+      "display_name_zh": "生菜",
+      "display_name_en": "lettuce",
+      "category": "vegetable",
+      "attributes": [
+        "fresh",
+        "vegetable",
+        "healthy"
+      ],
+      "synonyms_zh": [
+        "生菜",
+        "绿叶菜"
+      ],
+      "brand": "每日鲜蔬",
+      "price": 9,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": 1.9584141969680786,
+        "y": 0.6328193545341492,
+        "z": -2.4749207496643066
+      },
+      "parent_receptacles": [
+        "Shelf|+01.75|+00.55|-02.56"
+      ],
+      "is_food": true,
+      "is_pickup_required": true,
+      "scene_randomization": {
+        "randomized": true,
+        "random_seed": 0,
+        "random_spawn_success": true,
+        "error_message": ""
+      }
+    },
+    {
+      "product_id": "FloorPlan1_Spoon_000",
+      "object_id": "Spoon|-01.69|+00.91|-02.37",
+      "object_type": "Spoon",
+      "scene": "FloorPlan1",
+      "shelf_id": "shelf_FloorPlan1_020",
+      "display_name_zh": "勺子",
+      "display_name_en": "spoon",
+      "category": "utensil",
+      "attributes": [
+        "utensil"
+      ],
+      "synonyms_zh": [
+        "勺子"
+      ],
+      "brand": "日用优选",
+      "price": 8,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": -1.6934192180633545,
+        "y": 0.9068501591682434,
+        "z": -2.366023063659668
+      },
+      "parent_receptacles": [
+        "CounterTop|-01.87|+00.95|-01.21"
+      ],
+      "is_food": false,
+      "is_pickup_required": true,
+      "scene_randomization": {
+        "randomized": true,
+        "random_seed": 0,
+        "random_spawn_success": true,
+        "error_message": ""
+      }
+    },
+    {
+      "product_id": "FloorPlan1_Mug_000",
+      "object_id": "Mug|+01.65|+00.56|-02.52",
+      "object_type": "Mug",
+      "scene": "FloorPlan1",
+      "shelf_id": "shelf_FloorPlan1_022",
+      "display_name_zh": "杯子",
+      "display_name_en": "mug",
+      "category": "container",
+      "attributes": [
+        "container",
+        "daily_goods"
+      ],
+      "synonyms_zh": [
+        "杯子",
+        "马克杯"
+      ],
+      "brand": "日用优选",
+      "price": 8,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": 1.6473126411437988,
+        "y": 0.5590714812278748,
+        "z": -2.517206907272339
+      },
+      "parent_receptacles": [
+        "Shelf|+01.75|+00.55|-02.56"
+      ],
+      "is_food": false,
+      "is_pickup_required": true,
+      "scene_randomization": {
+        "randomized": true,
+        "random_seed": 0,
+        "random_spawn_success": true,
+        "error_message": ""
+      }
+    }
+  ],
+  "shelf_graph": [
+    {
+      "shelf_id": "shelf_FloorPlan1_022",
+      "source_object_id": "shelf_FloorPlan1_022"
+    },
+    {
+      "shelf_id": "shelf_FloorPlan1_003",
+      "source_object_id": "shelf_FloorPlan1_003"
+    },
+    {
+      "shelf_id": "shelf_FloorPlan1_005",
+      "source_object_id": "shelf_FloorPlan1_005"
+    },
+    {
+      "shelf_id": "shelf_FloorPlan1_020",
+      "source_object_id": "shelf_FloorPlan1_020"
+    },
+    {
+      "shelf_id": "shelf_FloorPlan1_021",
+      "source_object_id": "shelf_FloorPlan1_021"
+    }
+  ],
+  "npc_dialogue": [],
+  "high_level_plan": [
+    {
+      "action": "navigate_to_shelf",
+      "args": {
+        "shelf_id": "shelf_FloorPlan1_022"
+      },
+      "preconditions": [],
+      "expected_effects": [],
+      "sim_actions": [
+        {
+          "action": "Teleport"
+        }
+      ],
+      "success": true,
+      "failure_reason": null
+    },
+    {
+      "action": "search_object",
+      "args": {
+        "query": "帮我把早餐食品放到台面上"
+      },
+      "preconditions": [],
+      "expected_effects": [],
+      "sim_actions": [
+        {
+          "action": "Done"
+        }
+      ],
+      "success": true,
+      "failure_reason": null
+    },
+    {
+      "action": "look_at",
+      "args": {
+        "object_id": "Bread|+01.96|+00.63|-02.64"
+      },
+      "preconditions": [],
+      "expected_effects": [],
+      "sim_actions": [
+        {
+          "action": "Teleport"
+        }
+      ],
+      "success": true,
+      "failure_reason": null
+    },
+    {
+      "action": "answer_user",
+      "args": {
+        "text": "我找到了面包。"
+      },
+      "preconditions": [],
+      "expected_effects": [],
+      "sim_actions": [
+        {
+          "action": "Done"
+        }
+      ],
+      "success": true,
+      "failure_reason": null
+    },
+    {
+      "action": "pick_object",
+      "args": {
+        "object_id": "Bread|+01.96|+00.63|-02.64"
+      },
+      "preconditions": [],
+      "expected_effects": [],
+      "sim_actions": [
+        {
+          "action": "PickupObject"
+        }
+      ],
+      "success": true,
+      "failure_reason": null
+    },
+    {
+      "action": "place_object",
+      "args": {
+        "target": "counter"
+      },
+      "preconditions": [],
+      "expected_effects": [],
+      "sim_actions": [
+        {
+          "action": "PutObject"
+        }
+      ],
+      "success": true,
+      "failure_reason": null
+    },
+    {
+      "action": "finish",
+      "args": {},
+      "preconditions": [],
+      "expected_effects": [],
+      "sim_actions": [
+        {
+          "action": "Done"
+        }
+      ],
+      "success": true,
+      "failure_reason": null
+    }
+  ],
+  "sim_action_trace": [
+    {
+      "action": "Teleport",
+      "success": true
+    },
+    {
+      "action": "Done",
+      "success": true
+    },
+    {
+      "action": "Teleport",
+      "success": true
+    },
+    {
+      "action": "Done",
+      "success": true
+    },
+    {
+      "action": "PickupObject",
+      "success": true
+    },
+    {
+      "action": "PutObject",
+      "success": true
+    },
+    {
+      "action": "Done",
+      "success": true
+    }
+  ],
+  "observations": [
+    {
+      "step_idx": 0,
+      "rgb_path": "images/episode_000008_step_000_rgb.png",
+      "depth_path": null,
+      "segmentation_path": null,
+      "metadata_path": "episodes/episode_000008_step_000_metadata.json",
+      "agent_pose": {},
+      "held_object": null
+    },
+    {
+      "step_idx": 1,
+      "rgb_path": "images/episode_000008_step_001_rgb.png",
+      "depth_path": null,
+      "segmentation_path": null,
+      "metadata_path": "episodes/episode_000008_step_001_metadata.json",
+      "agent_pose": {},
+      "held_object": null
+    },
+    {
+      "step_idx": 2,
+      "rgb_path": "images/episode_000008_step_002_rgb.png",
+      "depth_path": null,
+      "segmentation_path": null,
+      "metadata_path": "episodes/episode_000008_step_002_metadata.json",
+      "agent_pose": {},
+      "held_object": null
+    },
+    {
+      "step_idx": 3,
+      "rgb_path": "images/episode_000008_step_003_rgb.png",
+      "depth_path": null,
+      "segmentation_path": null,
+      "metadata_path": "episodes/episode_000008_step_003_metadata.json",
+      "agent_pose": {},
+      "held_object": null
+    },
+    {
+      "step_idx": 4,
+      "rgb_path": "images/episode_000008_step_004_rgb.png",
+      "depth_path": null,
+      "segmentation_path": null,
+      "metadata_path": "episodes/episode_000008_step_004_metadata.json",
+      "agent_pose": {},
+      "held_object": null
+    },
+    {
+      "step_idx": 5,
+      "rgb_path": "images/episode_000008_step_005_rgb.png",
+      "depth_path": null,
+      "segmentation_path": null,
+      "metadata_path": "episodes/episode_000008_step_005_metadata.json",
+      "agent_pose": {},
+      "held_object": null
+    },
+    {
+      "step_idx": 6,
+      "rgb_path": "images/episode_000008_step_006_rgb.png",
+      "depth_path": null,
+      "segmentation_path": null,
+      "metadata_path": "episodes/episode_000008_step_006_metadata.json",
+      "agent_pose": {},
+      "held_object": null
+    }
+  ],
+  "metrics": {
+    "target_found": true,
+    "dialogue_resolved": false,
+    "substitute_valid": false,
+    "pickup_success": true,
+    "placement_success": true,
+    "num_high_level_steps": 7,
+    "num_sim_steps": 7,
+    "num_dialogue_turns": 0,
+    "used_force_action": false,
+    "final_distance_to_target": null
+  },
+  "success": true,
+  "failure_reason": null,
+  "provenance": {
+    "generator": "retail_thor.generator.build_episode",
+    "generated_at": "2026-06-30T10:38:34.345682",
+    "randomization": {
+      "randomized": true,
+      "random_seed": 0,
+      "random_spawn_success": true,
+      "error_message": ""
+    },
+    "generation": {
+      "random_seed": 0,
+      "mode": "demo_placeholder"
+    },
+    "observation_source": "demo_placeholder"
+  }
+}

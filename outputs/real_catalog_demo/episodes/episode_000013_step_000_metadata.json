@@ -1,0 +1,7 @@
+{
+  "episode_id": "episode_000013",
+  "step_idx": 0,
+  "scene": "FloorPlan2",
+  "action": "ask_npc",
+  "demo_placeholder": true
+}

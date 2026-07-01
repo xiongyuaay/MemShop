@@ -1,0 +1,24 @@
+{
+  "source": "synthetic_report_scene",
+  "visual_style": "sari_sandbox_like_perspective",
+  "note": "Report-oriented SARI-like synthetic perspective scenes; these are not simulator-rendered frames.",
+  "width": 800,
+  "height": 600,
+  "screenshots": [
+    {
+      "scene_id": "sari_store_front",
+      "path": "sari_store_front.png",
+      "caption": "SARI-like first-person retail store view"
+    },
+    {
+      "scene_id": "sari_store_aisle",
+      "path": "sari_store_aisle.png",
+      "caption": "SARI-like aisle view with shelves"
+    },
+    {
+      "scene_id": "sari_checkout_view",
+      "path": "sari_checkout_view.png",
+      "caption": "SARI-like checkout view with scanner"
+    }
+  ]
+}

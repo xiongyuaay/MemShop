@@ -1,0 +1,1962 @@
+{
+  "episode_id": "episode_000009",
+  "schema_version": "0.1.0",
+  "backend": "ai2thor",
+  "scene": "FloorPlan1",
+  "random_seed": 0,
+  "capability_family": [
+    "object_loco_navigation"
+  ],
+  "task_type": "find_product",
+  "prompt": "帮我找一个 10 元以内的饮料",
+  "target": {
+    "constraint": {
+      "category": "drink",
+      "max_price": 10
+    },
+    "candidate_product_ids": [
+      "FloorPlan1_Bottle_000"
+    ],
+    "target_product_id": "FloorPlan1_Bottle_000",
+    "target_object_id": "Bottle|+01.54|+00.89|-02.54"
+  },
+  "episode_idx": 9,
+  "max_steps": 20,
+  "instruction": "帮我找一个 10 元以内的饮料",
+  "initial_state": {
+    "agent_pose": {},
+    "held_object": null
+  },
+  "product_catalog": [
+    {
+      "product_id": "FloorPlan1_Apple_000",
+      "object_id": "Apple|-00.47|+01.15|+00.48",
+      "object_type": "Apple",
+      "scene": "FloorPlan1",
+      "shelf_id": "shelf_FloorPlan1_010",
+      "display_name_zh": "苹果",
+      "display_name_en": "apple",
+      "category": "fruit",
+      "attributes": [
+        "fresh",
+        "healthy",
+        "low_sugar"
+      ],
+      "synonyms_zh": [
+        "水果",
+        "苹果"
+      ],
+      "brand": "每日鲜果",
+      "price": 4,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": -0.4651530981063843,
+        "y": 1.151225209236145,
+        "z": 0.47573569416999817
+      },
+      "parent_receptacles": [
+        "CounterTop|-00.08|+01.15|00.00"
+      ],
+      "is_food": true,
+      "is_pickup_required": true
+    },
+    {
+      "product_id": "FloorPlan1_Bottle_000",
+      "object_id": "Bottle|+01.54|+00.89|-02.54",
+      "object_type": "Bottle",
+      "scene": "FloorPlan1",
+      "shelf_id": "shelf_FloorPlan1_023",
+      "display_name_zh": "饮料",
+      "display_name_en": "bottled drink",
+      "category": "drink",
+      "attributes": [
+        "bottled",
+        "cold_drink"
+      ],
+      "synonyms_zh": [
+        "瓶装饮料",
+        "饮料"
+      ],
+      "brand": "冰爽",
+      "price": 7,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": 1.539987325668335,
+        "y": 0.8862326741218567,
+        "z": -2.5399835109710693
+      },
+      "parent_receptacles": [
+        "Shelf|+01.75|+00.88|-02.56"
+      ],
+      "is_food": true,
+      "is_pickup_required": true
+    },
+    {
+      "product_id": "FloorPlan1_Bowl_000",
+      "object_id": "Bowl|+00.27|+01.10|-00.75",
+      "object_type": "Bowl",
+      "scene": "FloorPlan1",
+      "shelf_id": "shelf_FloorPlan1_010",
+      "display_name_zh": "碗",
+      "display_name_en": "bowl",
+      "category": "container",
+      "attributes": [
+        "container",
+        "placement_target",
+        "cart_like"
+      ],
+      "synonyms_zh": [
+        "碗",
+        "容器"
+      ],
+      "brand": "日用优选",
+      "price": 7,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": 0.2731872498989105,
+        "y": 1.1010280847549438,
+        "z": -0.7532859444618225
+      },
+      "parent_receptacles": [
+        "CounterTop|-00.08|+01.15|00.00"
+      ],
+      "is_food": false,
+      "is_pickup_required": false
+    },
+    {
+      "product_id": "FloorPlan1_Bread_000",
+      "object_id": "Bread|-00.52|+01.17|-00.03",
+      "object_type": "Bread",
+      "scene": "FloorPlan1",
+      "shelf_id": "shelf_FloorPlan1_010",
+      "display_name_zh": "面包",
+      "display_name_en": "bread",
+      "category": "bakery",
+      "attributes": [
+        "breakfast",
+        "staple_food"
+      ],
+      "synonyms_zh": [
+        "面包",
+        "早餐"
+      ],
+      "brand": "麦香",
+      "price": 14,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": -0.522383451461792,
+        "y": 1.1704490184783936,
+        "z": -0.028279855847358704
+      },
+      "parent_receptacles": [
+        "CounterTop|-00.08|+01.15|00.00"
+      ],
+      "is_food": true,
+      "is_pickup_required": true
+    },
+    {
+      "product_id": "FloorPlan1_Cup_000",
+      "object_id": "Cup|+00.37|+01.64|-02.58",
+      "object_type": "Cup",
+      "scene": "FloorPlan1",
+      "shelf_id": "shelf_FloorPlan1_005",
+      "display_name_zh": "杯子",
+      "display_name_en": "cup",
+      "category": "container",
+      "attributes": [
+        "container",
+        "daily_goods"
+      ],
+      "synonyms_zh": [
+        "杯子"
+      ],
+      "brand": "日用优选",
+      "price": 16,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": 0.37134891748428345,
+        "y": 1.6447508335113525,
+        "z": -2.5791823863983154
+      },
+      "parent_receptacles": [
+        "Cabinet|+00.68|+02.02|-02.46"
+      ],
+      "is_food": false,
+      "is_pickup_required": true
+    },
+    {
+      "product_id": "FloorPlan1_Egg_000",
+      "object_id": "Egg|-02.04|+00.81|+01.24",
+      "object_type": "Egg",
+      "scene": "FloorPlan1",
+      "shelf_id": "shelf_FloorPlan1_021",
+      "display_name_zh": "鸡蛋",
+      "display_name_en": "egg",
+      "category": "dairy_or_protein",
+      "attributes": [
+        "protein",
+        "breakfast"
+      ],
+      "synonyms_zh": [
+        "鸡蛋",
+        "蛋"
+      ],
+      "brand": "农场鲜蛋",
+      "price": 11,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": -2.0371663570404053,
+        "y": 0.8123282790184021,
+        "z": 1.24473237991333
+      },
+      "parent_receptacles": [
+        "Fridge|-02.10|+00.00|+01.07"
+      ],
+      "is_food": true,
+      "is_pickup_required": true
+    },
+    {
+      "product_id": "FloorPlan1_Fork_000",
+      "object_id": "Fork|+00.95|+00.77|-02.37",
+      "object_type": "Fork",
+      "scene": "FloorPlan1",
+      "shelf_id": "shelf_FloorPlan1_013",
+      "display_name_zh": "叉子",
+      "display_name_en": "fork",
+      "category": "utensil",
+      "attributes": [
+        "utensil"
+      ],
+      "synonyms_zh": [
+        "叉子"
+      ],
+      "brand": "日用优选",
+      "price": 13,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": 0.949235737323761,
+        "y": 0.7682105302810669,
+        "z": -2.3652522563934326
+      },
+      "parent_receptacles": [
+        "Drawer|+00.95|+00.83|-02.20"
+      ],
+      "is_food": false,
+      "is_pickup_required": true
+    },
+    {
+      "product_id": "FloorPlan1_Lettuce_000",
+      "object_id": "Lettuce|-01.81|+00.97|-00.94",
+      "object_type": "Lettuce",
+      "scene": "FloorPlan1",
+      "shelf_id": "shelf_FloorPlan1_011",
+      "display_name_zh": "生菜",
+      "display_name_en": "lettuce",
+      "category": "vegetable",
+      "attributes": [
+        "fresh",
+        "vegetable",
+        "healthy"
+      ],
+      "synonyms_zh": [
+        "生菜",
+        "绿叶菜"
+      ],
+      "brand": "每日鲜蔬",
+      "price": 5,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": -1.8069932460784912,
+        "y": 0.973751425743103,
+        "z": -0.9429957866668701
+      },
+      "parent_receptacles": [
+        "CounterTop|-01.87|+00.95|-01.21"
+      ],
+      "is_food": true,
+      "is_pickup_required": true
+    },
+    {
+      "product_id": "FloorPlan1_Mug_000",
+      "object_id": "Mug|-01.76|+00.90|-00.62",
+      "object_type": "Mug",
+      "scene": "FloorPlan1",
+      "shelf_id": "shelf_FloorPlan1_011",
+      "display_name_zh": "杯子",
+      "display_name_en": "mug",
+      "category": "container",
+      "attributes": [
+        "container",
+        "daily_goods"
+      ],
+      "synonyms_zh": [
+        "杯子",
+        "马克杯"
+      ],
+      "brand": "日用优选",
+      "price": 25,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": -1.7607927322387695,
+        "y": 0.9000897407531738,
+        "z": -0.6206093430519104
+      },
+      "parent_receptacles": [
+        "CounterTop|-01.87|+00.95|-01.21"
+      ],
+      "is_food": false,
+      "is_pickup_required": true
+    },
+    {
+      "product_id": "FloorPlan1_Plate_000",
+      "object_id": "Plate|+00.96|+01.65|-02.61",
+      "object_type": "Plate",
+      "scene": "FloorPlan1",
+      "shelf_id": "shelf_FloorPlan1_003",
+      "display_name_zh": "盘子",
+      "display_name_en": "plate",
+      "category": "container",
+      "attributes": [
+        "container",
+        "placement_target"
+      ],
+      "synonyms_zh": [
+        "盘子",
+        "餐盘"
+      ],
+      "brand": "日用优选",
+      "price": 13,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": 0.9560005068778992,
+        "y": 1.6460683345794678,
+        "z": -2.6061997413635254
+      },
+      "parent_receptacles": [
+        "Cabinet|+00.72|+02.02|-02.46"
+      ],
+      "is_food": false,
+      "is_pickup_required": false
+    },
+    {
+      "product_id": "FloorPlan1_Potato_000",
+      "object_id": "Potato|-01.66|+00.93|-02.15",
+      "object_type": "Potato",
+      "scene": "FloorPlan1",
+      "shelf_id": "shelf_FloorPlan1_011",
+      "display_name_zh": "土豆",
+      "display_name_en": "potato",
+      "category": "vegetable",
+      "attributes": [
+        "vegetable",
+        "staple_food"
+      ],
+      "synonyms_zh": [
+        "土豆",
+        "马铃薯"
+      ],
+      "brand": "田园",
+      "price": 5,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": -1.655700445175171,
+        "y": 0.9333281517028809,
+        "z": -2.1505982875823975
+      },
+      "parent_receptacles": [
+        "CounterTop|-01.87|+00.95|-01.21"
+      ],
+      "is_food": true,
+      "is_pickup_required": true
+    },
+    {
+      "product_id": "FloorPlan1_Spoon_000",
+      "object_id": "Spoon|+00.98|+00.77|-02.29",
+      "object_type": "Spoon",
+      "scene": "FloorPlan1",
+      "shelf_id": "shelf_FloorPlan1_013",
+      "display_name_zh": "勺子",
+      "display_name_en": "spoon",
+      "category": "utensil",
+      "attributes": [
+        "utensil"
+      ],
+      "synonyms_zh": [
+        "勺子"
+      ],
+      "brand": "日用优选",
+      "price": 20,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": 0.9829730987548828,
+        "y": 0.766754686832428,
+        "z": -2.286741256713867
+      },
+      "parent_receptacles": [
+        "Drawer|+00.95|+00.83|-02.20"
+      ],
+      "is_food": false,
+      "is_pickup_required": true
+    },
+    {
+      "product_id": "FloorPlan1_Tomato_000",
+      "object_id": "Tomato|-00.39|+01.14|-00.81",
+      "object_type": "Tomato",
+      "scene": "FloorPlan1",
+      "shelf_id": "shelf_FloorPlan1_010",
+      "display_name_zh": "番茄",
+      "display_name_en": "tomato",
+      "category": "vegetable",
+      "attributes": [
+        "fresh",
+        "vegetable",
+        "healthy"
+      ],
+      "synonyms_zh": [
+        "番茄",
+        "西红柿"
+      ],
+      "brand": "田园",
+      "price": 6,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": -0.3850001394748688,
+        "y": 1.13701331615448,
+        "z": -0.812004804611206
+      },
+      "parent_receptacles": [
+        "CounterTop|-00.08|+01.15|00.00"
+      ],
+      "is_food": true,
+      "is_pickup_required": true
+    },
+    {
+      "product_id": "FloorPlan2_Apple_000",
+      "object_id": "Apple|-01.65|+00.81|+00.07",
+      "object_type": "Apple",
+      "scene": "FloorPlan2",
+      "shelf_id": "shelf_FloorPlan2_024",
+      "display_name_zh": "苹果",
+      "display_name_en": "apple",
+      "category": "fruit",
+      "attributes": [
+        "fresh",
+        "healthy",
+        "low_sugar"
+      ],
+      "synonyms_zh": [
+        "水果",
+        "苹果"
+      ],
+      "brand": "每日鲜果",
+      "price": 6,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": -1.650635838508606,
+        "y": 0.8054357171058655,
+        "z": 0.07250053435564041
+      },
+      "parent_receptacles": [
+        "Fridge|-01.76|+00.00|00.00"
+      ],
+      "is_food": true,
+      "is_pickup_required": true
+    },
+    {
+      "product_id": "FloorPlan2_Bowl_000",
+      "object_id": "Bowl|+00.28|+00.92|+01.09",
+      "object_type": "Bowl",
+      "scene": "FloorPlan2",
+      "shelf_id": "shelf_FloorPlan2_010",
+      "display_name_zh": "碗",
+      "display_name_en": "bowl",
+      "category": "container",
+      "attributes": [
+        "container",
+        "placement_target",
+        "cart_like"
+      ],
+      "synonyms_zh": [
+        "碗",
+        "容器"
+      ],
+      "brand": "日用优选",
+      "price": 9,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": true,
+      "position": {
+        "x": 0.2765311300754547,
+        "y": 0.9161381125450134,
+        "z": 1.091195821762085
+      },
+      "parent_receptacles": [
+        "CounterTop|-00.02|+00.96|+00.51"
+      ],
+      "is_food": false,
+      "is_pickup_required": false
+    },
+    {
+      "product_id": "FloorPlan2_Bread_000",
+      "object_id": "Bread|+00.26|+00.99|-00.08",
+      "object_type": "Bread",
+      "scene": "FloorPlan2",
+      "shelf_id": "shelf_FloorPlan2_010",
+      "display_name_zh": "面包",
+      "display_name_en": "bread",
+      "category": "bakery",
+      "attributes": [
+        "breakfast",
+        "staple_food"
+      ],
+      "synonyms_zh": [
+        "面包",
+        "早餐"
+      ],
+      "brand": "麦香",
+      "price": 14,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": 0.2561373710632324,
+        "y": 0.9874744415283203,
+        "z": -0.07600239664316177
+      },
+      "parent_receptacles": [
+        "CounterTop|-00.02|+00.96|+00.51"
+      ],
+      "is_food": true,
+      "is_pickup_required": true
+    },
+    {
+      "product_id": "FloorPlan2_Cup_000",
+      "object_id": "Cup|+00.90|+01.67|-01.61",
+      "object_type": "Cup",
+      "scene": "FloorPlan2",
+      "shelf_id": "shelf_FloorPlan2_007",
+      "display_name_zh": "杯子",
+      "display_name_en": "cup",
+      "category": "container",
+      "attributes": [
+        "container",
+        "daily_goods"
+      ],
+      "synonyms_zh": [
+        "杯子"
+      ],
+      "brand": "日用优选",
+      "price": 9,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": 0.8968387246131897,
+        "y": 1.6681158542633057,
+        "z": -1.606738805770874
+      },
+      "parent_receptacles": [
+        "Cabinet|+01.71|+02.02|-01.45"
+      ],
+      "is_food": false,
+      "is_pickup_required": true
+    },
+    {
+      "product_id": "FloorPlan2_Egg_000",
+      "object_id": "Egg|+00.13|+00.95|-00.17",
+      "object_type": "Egg",
+      "scene": "FloorPlan2",
+      "shelf_id": "shelf_FloorPlan2_010",
+      "display_name_zh": "鸡蛋",
+      "display_name_en": "egg",
+      "category": "dairy_or_protein",
+      "attributes": [
+        "protein",
+        "breakfast"
+      ],
+      "synonyms_zh": [
+        "鸡蛋",
+        "蛋"
+      ],
+      "brand": "农场鲜蛋",
+      "price": 13,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": 0.13451409339904785,
+        "y": 0.954972505569458,
+        "z": -0.16909338533878326
+      },
+      "parent_receptacles": [
+        "CounterTop|-00.02|+00.96|+00.51"
+      ],
+      "is_food": true,
+      "is_pickup_required": true
+    },
+    {
+      "product_id": "FloorPlan2_Fork_000",
+      "object_id": "Fork|+01.69|+00.90|+01.45",
+      "object_type": "Fork",
+      "scene": "FloorPlan2",
+      "shelf_id": "shelf_FloorPlan2_009",
+      "display_name_zh": "叉子",
+      "display_name_en": "fork",
+      "category": "utensil",
+      "attributes": [
+        "utensil"
+      ],
+      "synonyms_zh": [
+        "叉子"
+      ],
+      "brand": "日用优选",
+      "price": 11,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": 1.6937254667282104,
+        "y": 0.9017426371574402,
+        "z": 1.4480842351913452
+      },
+      "parent_receptacles": [
+        "CounterTop|+00.00|+00.95|-01.51"
+      ],
+      "is_food": false,
+      "is_pickup_required": true
+    },
+    {
+      "product_id": "FloorPlan2_Lettuce_000",
+      "object_id": "Lettuce|-01.71|+00.82|-00.14",
+      "object_type": "Lettuce",
+      "scene": "FloorPlan2",
+      "shelf_id": "shelf_FloorPlan2_024",
+      "display_name_zh": "生菜",
+      "display_name_en": "lettuce",
+      "category": "vegetable",
+      "attributes": [
+        "fresh",
+        "vegetable",
+        "healthy"
+      ],
+      "synonyms_zh": [
+        "生菜",
+        "绿叶菜"
+      ],
+      "brand": "田园",
+      "price": 5,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": -1.7119702100753784,
+        "y": 0.8199252486228943,
+        "z": -0.13637159764766693
+      },
+      "parent_receptacles": [
+        "Fridge|-01.76|+00.00|00.00"
+      ],
+      "is_food": true,
+      "is_pickup_required": true
+    },
+    {
+      "product_id": "FloorPlan2_Mug_000",
+      "object_id": "Mug|-00.24|+00.92|-00.26",
+      "object_type": "Mug",
+      "scene": "FloorPlan2",
+      "shelf_id": "shelf_FloorPlan2_010",
+      "display_name_zh": "杯子",
+      "display_name_en": "mug",
+      "category": "container",
+      "attributes": [
+        "container",
+        "daily_goods"
+      ],
+      "synonyms_zh": [
+        "杯子",
+        "马克杯"
+      ],
+      "brand": "日用优选",
+      "price": 12,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": -0.23500138521194458,
+        "y": 0.915004551410675,
+        "z": -0.2560001611709595
+      },
+      "parent_receptacles": [
+        "CounterTop|-00.02|+00.96|+00.51"
+      ],
+      "is_food": false,
+      "is_pickup_required": true
+    },
+    {
+      "product_id": "FloorPlan2_Plate_000",
+      "object_id": "Plate|+01.32|+01.67|-01.60",
+      "object_type": "Plate",
+      "scene": "FloorPlan2",
+      "shelf_id": "shelf_FloorPlan2_007",
+      "display_name_zh": "盘子",
+      "display_name_en": "plate",
+      "category": "container",
+      "attributes": [
+        "container",
+        "placement_target"
+      ],
+      "synonyms_zh": [
+        "盘子",
+        "餐盘"
+      ],
+      "brand": "日用优选",
+      "price": 5,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": 1.322952151298523,
+        "y": 1.670077919960022,
+        "z": -1.5954313278198242
+      },
+      "parent_receptacles": [
+        "Cabinet|+01.71|+02.02|-01.45"
+      ],
+      "is_food": false,
+      "is_pickup_required": false
+    },
+    {
+      "product_id": "FloorPlan2_Potato_000",
+      "object_id": "Potato|+00.33|+00.94|+01.31",
+      "object_type": "Potato",
+      "scene": "FloorPlan2",
+      "shelf_id": "shelf_FloorPlan2_010",
+      "display_name_zh": "土豆",
+      "display_name_en": "potato",
+      "category": "vegetable",
+      "attributes": [
+        "vegetable",
+        "staple_food"
+      ],
+      "synonyms_zh": [
+        "土豆",
+        "马铃薯"
+      ],
+      "brand": "田园",
+      "price": 4,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": 0.3274361789226532,
+        "y": 0.940035343170166,
+        "z": 1.3115084171295166
+      },
+      "parent_receptacles": [
+        "CounterTop|-00.02|+00.96|+00.51"
+      ],
+      "is_food": true,
+      "is_pickup_required": true
+    },
+    {
+      "product_id": "FloorPlan2_Spoon_000",
+      "object_id": "Spoon|+01.62|+00.90|+01.40",
+      "object_type": "Spoon",
+      "scene": "FloorPlan2",
+      "shelf_id": "shelf_FloorPlan2_009",
+      "display_name_zh": "勺子",
+      "display_name_en": "spoon",
+      "category": "utensil",
+      "attributes": [
+        "utensil"
+      ],
+      "synonyms_zh": [
+        "勺子"
+      ],
+      "brand": "日用优选",
+      "price": 12,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": 1.620898962020874,
+        "y": 0.9003020524978638,
+        "z": 1.402853012084961
+      },
+      "parent_receptacles": [
+        "CounterTop|+00.00|+00.95|-01.51"
+      ],
+      "is_food": false,
+      "is_pickup_required": true
+    },
+    {
+      "product_id": "FloorPlan2_Tomato_000",
+      "object_id": "Tomato|+00.17|+00.97|-00.28",
+      "object_type": "Tomato",
+      "scene": "FloorPlan2",
+      "shelf_id": "shelf_FloorPlan2_010",
+      "display_name_zh": "番茄",
+      "display_name_en": "tomato",
+      "category": "vegetable",
+      "attributes": [
+        "fresh",
+        "vegetable",
+        "healthy"
+      ],
+      "synonyms_zh": [
+        "番茄",
+        "西红柿"
+      ],
+      "brand": "田园",
+      "price": 4,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": 0.16780345141887665,
+        "y": 0.9744100570678711,
+        "z": -0.28140586614608765
+      },
+      "parent_receptacles": [
+        "CounterTop|-00.02|+00.96|+00.51"
+      ],
+      "is_food": true,
+      "is_pickup_required": true
+    },
+    {
+      "product_id": "FloorPlan3_Bowl_000",
+      "object_id": "Bowl|-01.82|+01.31|+00.27",
+      "object_type": "Bowl",
+      "scene": "FloorPlan3",
+      "shelf_id": "shelf_FloorPlan3_004",
+      "display_name_zh": "碗",
+      "display_name_en": "bowl",
+      "category": "container",
+      "attributes": [
+        "container",
+        "placement_target",
+        "cart_like"
+      ],
+      "synonyms_zh": [
+        "碗",
+        "容器"
+      ],
+      "brand": "日用优选",
+      "price": 6,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": -1.8167372941970825,
+        "y": 1.313002109527588,
+        "z": 0.2730857729911804
+      },
+      "parent_receptacles": [
+        "CounterTop|-01.81|+01.36|+01.18"
+      ],
+      "is_food": false,
+      "is_pickup_required": false
+    },
+    {
+      "product_id": "FloorPlan3_Bread_000",
+      "object_id": "Bread|-01.51|+01.38|+00.66",
+      "object_type": "Bread",
+      "scene": "FloorPlan3",
+      "shelf_id": "shelf_FloorPlan3_004",
+      "display_name_zh": "面包",
+      "display_name_en": "bread",
+      "category": "bakery",
+      "attributes": [
+        "breakfast",
+        "staple_food"
+      ],
+      "synonyms_zh": [
+        "面包",
+        "早餐"
+      ],
+      "brand": "晨光烘焙",
+      "price": 8,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": -1.5136305093765259,
+        "y": 1.3809159994125366,
+        "z": 0.6621981263160706
+      },
+      "parent_receptacles": [
+        "CounterTop|-01.81|+01.36|+01.18"
+      ],
+      "is_food": true,
+      "is_pickup_required": true
+    },
+    {
+      "product_id": "FloorPlan3_Cup_000",
+      "object_id": "Cup|+00.68|+01.31|-00.90",
+      "object_type": "Cup",
+      "scene": "FloorPlan3",
+      "shelf_id": "shelf_FloorPlan3_004",
+      "display_name_zh": "杯子",
+      "display_name_en": "cup",
+      "category": "container",
+      "attributes": [
+        "container",
+        "daily_goods"
+      ],
+      "synonyms_zh": [
+        "杯子"
+      ],
+      "brand": "日用优选",
+      "price": 8,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": 0.6819956302642822,
+        "y": 1.3101484775543213,
+        "z": -0.9020004272460938
+      },
+      "parent_receptacles": [
+        "CounterTop|-01.81|+01.36|+01.18"
+      ],
+      "is_food": false,
+      "is_pickup_required": true
+    },
+    {
+      "product_id": "FloorPlan3_Fork_000",
+      "object_id": "Fork|+00.62|+01.31|-02.48",
+      "object_type": "Fork",
+      "scene": "FloorPlan3",
+      "shelf_id": "shelf_FloorPlan3_004",
+      "display_name_zh": "叉子",
+      "display_name_en": "fork",
+      "category": "utensil",
+      "attributes": [
+        "utensil"
+      ],
+      "synonyms_zh": [
+        "叉子"
+      ],
+      "brand": "日用优选",
+      "price": 15,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": 0.6227061748504639,
+        "y": 1.312118649482727,
+        "z": -2.4839890003204346
+      },
+      "parent_receptacles": [
+        "CounterTop|-01.81|+01.36|+01.18"
+      ],
+      "is_food": false,
+      "is_pickup_required": true
+    },
+    {
+      "product_id": "FloorPlan3_Plate_000",
+      "object_id": "Plate|-01.47|+01.31|+00.24",
+      "object_type": "Plate",
+      "scene": "FloorPlan3",
+      "shelf_id": "shelf_FloorPlan3_004",
+      "display_name_zh": "盘子",
+      "display_name_en": "plate",
+      "category": "container",
+      "attributes": [
+        "container",
+        "placement_target"
+      ],
+      "synonyms_zh": [
+        "盘子",
+        "餐盘"
+      ],
+      "brand": "日用优选",
+      "price": 10,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": -1.4669997692108154,
+        "y": 1.3114917278289795,
+        "z": 0.24399907886981964
+      },
+      "parent_receptacles": [
+        "CounterTop|-01.81|+01.36|+01.18"
+      ],
+      "is_food": false,
+      "is_pickup_required": false
+    },
+    {
+      "product_id": "FloorPlan3_Spoon_000",
+      "object_id": "Spoon|+00.61|+01.32|-02.36",
+      "object_type": "Spoon",
+      "scene": "FloorPlan3",
+      "shelf_id": "shelf_FloorPlan3_004",
+      "display_name_zh": "勺子",
+      "display_name_en": "spoon",
+      "category": "utensil",
+      "attributes": [
+        "utensil"
+      ],
+      "synonyms_zh": [
+        "勺子"
+      ],
+      "brand": "日用优选",
+      "price": 7,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": 0.6136632561683655,
+        "y": 1.318148136138916,
+        "z": -2.3614985942840576
+      },
+      "parent_receptacles": [
+        "CounterTop|-01.81|+01.36|+01.18"
+      ],
+      "is_food": false,
+      "is_pickup_required": true
+    },
+    {
+      "product_id": "FloorPlan3_Tomato_000",
+      "object_id": "Tomato|+00.92|+01.91|+01.61",
+      "object_type": "Tomato",
+      "scene": "FloorPlan3",
+      "shelf_id": "shelf_FloorPlan3_013",
+      "display_name_zh": "番茄",
+      "display_name_en": "tomato",
+      "category": "vegetable",
+      "attributes": [
+        "fresh",
+        "vegetable",
+        "healthy"
+      ],
+      "synonyms_zh": [
+        "番茄",
+        "西红柿"
+      ],
+      "brand": "田园",
+      "price": 2,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": 0.9227875471115112,
+        "y": 1.90924870967865,
+        "z": 1.605088472366333
+      },
+      "parent_receptacles": [
+        "Fridge|+01.01|+00.23|+01.92"
+      ],
+      "is_food": true,
+      "is_pickup_required": true
+    },
+    {
+      "product_id": "FloorPlan4_Apple_000",
+      "object_id": "Apple|-02.48|+01.18|+00.48",
+      "object_type": "Apple",
+      "scene": "FloorPlan4",
+      "shelf_id": "shelf_FloorPlan4_003",
+      "display_name_zh": "苹果",
+      "display_name_en": "apple",
+      "category": "fruit",
+      "attributes": [
+        "fresh",
+        "healthy",
+        "low_sugar"
+      ],
+      "synonyms_zh": [
+        "水果",
+        "苹果"
+      ],
+      "brand": "本地果园",
+      "price": 3,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": -2.4801712036132812,
+        "y": 1.1838111877441406,
+        "z": 0.4801863431930542
+      },
+      "parent_receptacles": [
+        "CounterTop|-02.28|+01.16|+00.38"
+      ],
+      "is_food": true,
+      "is_pickup_required": true
+    },
+    {
+      "product_id": "FloorPlan4_Bowl_000",
+      "object_id": "Bowl|-00.50|+01.04|+02.22",
+      "object_type": "Bowl",
+      "scene": "FloorPlan4",
+      "shelf_id": "shelf_FloorPlan4_005",
+      "display_name_zh": "碗",
+      "display_name_en": "bowl",
+      "category": "container",
+      "attributes": [
+        "container",
+        "placement_target",
+        "cart_like"
+      ],
+      "synonyms_zh": [
+        "碗",
+        "容器"
+      ],
+      "brand": "日用优选",
+      "price": 15,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": -0.49500396847724915,
+        "y": 1.0423569679260254,
+        "z": 2.2238378524780273
+      },
+      "parent_receptacles": [
+        "DiningTable|-00.62|+00.02|+02.49"
+      ],
+      "is_food": false,
+      "is_pickup_required": false
+    },
+    {
+      "product_id": "FloorPlan4_Bread_000",
+      "object_id": "Bread|-00.18|+01.12|+01.89",
+      "object_type": "Bread",
+      "scene": "FloorPlan4",
+      "shelf_id": "shelf_FloorPlan4_005",
+      "display_name_zh": "面包",
+      "display_name_en": "bread",
+      "category": "bakery",
+      "attributes": [
+        "breakfast",
+        "staple_food"
+      ],
+      "synonyms_zh": [
+        "面包",
+        "早餐"
+      ],
+      "brand": "晨光烘焙",
+      "price": 10,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": -0.18400001525878906,
+        "y": 1.1191563606262207,
+        "z": 1.8919998407363892
+      },
+      "parent_receptacles": [
+        "DiningTable|-00.62|+00.02|+02.49"
+      ],
+      "is_food": true,
+      "is_pickup_required": true
+    },
+    {
+      "product_id": "FloorPlan4_Egg_000",
+      "object_id": "Egg|-03.37|+01.30|+02.85",
+      "object_type": "Egg",
+      "scene": "FloorPlan4",
+      "shelf_id": "shelf_FloorPlan4_012",
+      "display_name_zh": "鸡蛋",
+      "display_name_en": "egg",
+      "category": "dairy_or_protein",
+      "attributes": [
+        "protein",
+        "breakfast"
+      ],
+      "synonyms_zh": [
+        "鸡蛋",
+        "蛋"
+      ],
+      "brand": "农场鲜蛋",
+      "price": 13,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": -3.3652048110961914,
+        "y": 1.298646330833435,
+        "z": 2.8507089614868164
+      },
+      "parent_receptacles": [
+        "Fridge|-03.52|+00.00|+02.72"
+      ],
+      "is_food": true,
+      "is_pickup_required": true
+    },
+    {
+      "product_id": "FloorPlan4_Fork_000",
+      "object_id": "Fork|-00.46|+01.04|+01.78",
+      "object_type": "Fork",
+      "scene": "FloorPlan4",
+      "shelf_id": "shelf_FloorPlan4_005",
+      "display_name_zh": "叉子",
+      "display_name_en": "fork",
+      "category": "utensil",
+      "attributes": [
+        "utensil"
+      ],
+      "synonyms_zh": [
+        "叉子"
+      ],
+      "brand": "日用优选",
+      "price": 5,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": -0.4609454572200775,
+        "y": 1.0389671325683594,
+        "z": 1.7759929895401
+      },
+      "parent_receptacles": [
+        "DiningTable|-00.62|+00.02|+02.49"
+      ],
+      "is_food": false,
+      "is_pickup_required": true
+    },
+    {
+      "product_id": "FloorPlan4_Lettuce_000",
+      "object_id": "Lettuce|-03.31|+00.97|+03.04",
+      "object_type": "Lettuce",
+      "scene": "FloorPlan4",
+      "shelf_id": "shelf_FloorPlan4_012",
+      "display_name_zh": "生菜",
+      "display_name_en": "lettuce",
+      "category": "vegetable",
+      "attributes": [
+        "fresh",
+        "vegetable",
+        "healthy"
+      ],
+      "synonyms_zh": [
+        "生菜",
+        "绿叶菜"
+      ],
+      "brand": "田园",
+      "price": 3,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": -3.309978723526001,
+        "y": 0.9700183868408203,
+        "z": 3.04463791847229
+      },
+      "parent_receptacles": [
+        "Fridge|-03.52|+00.00|+02.72"
+      ],
+      "is_food": true,
+      "is_pickup_required": true
+    },
+    {
+      "product_id": "FloorPlan4_Mug_000",
+      "object_id": "Mug|-00.38|+01.09|+03.19",
+      "object_type": "Mug",
+      "scene": "FloorPlan4",
+      "shelf_id": "shelf_FloorPlan4_005",
+      "display_name_zh": "杯子",
+      "display_name_en": "mug",
+      "category": "container",
+      "attributes": [
+        "container",
+        "daily_goods"
+      ],
+      "synonyms_zh": [
+        "杯子",
+        "马克杯"
+      ],
+      "brand": "日用优选",
+      "price": 29,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": -0.37787994742393494,
+        "y": 1.094746470451355,
+        "z": 3.1940078735351562
+      },
+      "parent_receptacles": [
+        "CoffeeMachine|-00.15|+01.04|+03.19",
+        "DiningTable|-00.62|+00.02|+02.49"
+      ],
+      "is_food": false,
+      "is_pickup_required": true
+    },
+    {
+      "product_id": "FloorPlan4_Potato_000",
+      "object_id": "Potato|-02.66|+01.15|+00.25",
+      "object_type": "Potato",
+      "scene": "FloorPlan4",
+      "shelf_id": "shelf_FloorPlan4_003",
+      "display_name_zh": "土豆",
+      "display_name_en": "potato",
+      "category": "vegetable",
+      "attributes": [
+        "vegetable",
+        "staple_food"
+      ],
+      "synonyms_zh": [
+        "土豆",
+        "马铃薯"
+      ],
+      "brand": "田园",
+      "price": 2,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": -2.6638941764831543,
+        "y": 1.1456565856933594,
+        "z": 0.24840478599071503
+      },
+      "parent_receptacles": [
+        "CounterTop|-02.28|+01.16|+00.38"
+      ],
+      "is_food": true,
+      "is_pickup_required": true
+    },
+    {
+      "product_id": "FloorPlan4_Spoon_000",
+      "object_id": "Spoon|-00.43|+01.04|+01.90",
+      "object_type": "Spoon",
+      "scene": "FloorPlan4",
+      "shelf_id": "shelf_FloorPlan4_005",
+      "display_name_zh": "勺子",
+      "display_name_en": "spoon",
+      "category": "utensil",
+      "attributes": [
+        "utensil"
+      ],
+      "synonyms_zh": [
+        "勺子"
+      ],
+      "brand": "日用优选",
+      "price": 19,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": -0.43199726939201355,
+        "y": 1.038537859916687,
+        "z": 1.9019986391067505
+      },
+      "parent_receptacles": [
+        "DiningTable|-00.62|+00.02|+02.49"
+      ],
+      "is_food": false,
+      "is_pickup_required": true
+    },
+    {
+      "product_id": "FloorPlan4_Tomato_000",
+      "object_id": "Tomato|-00.75|+01.08|+02.40",
+      "object_type": "Tomato",
+      "scene": "FloorPlan4",
+      "shelf_id": "shelf_FloorPlan4_005",
+      "display_name_zh": "番茄",
+      "display_name_en": "tomato",
+      "category": "vegetable",
+      "attributes": [
+        "fresh",
+        "vegetable",
+        "healthy"
+      ],
+      "synonyms_zh": [
+        "番茄",
+        "西红柿"
+      ],
+      "brand": "每日鲜蔬",
+      "price": 3,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": -0.7468154430389404,
+        "y": 1.0814971923828125,
+        "z": 2.3995020389556885
+      },
+      "parent_receptacles": [
+        "DiningTable|-00.62|+00.02|+02.49"
+      ],
+      "is_food": true,
+      "is_pickup_required": true
+    },
+    {
+      "product_id": "FloorPlan5_Apple_000",
+      "object_id": "Apple|+01.83|+00.78|-00.65",
+      "object_type": "Apple",
+      "scene": "FloorPlan5",
+      "shelf_id": "shelf_FloorPlan5_026",
+      "display_name_zh": "苹果",
+      "display_name_en": "apple",
+      "category": "fruit",
+      "attributes": [
+        "fresh",
+        "healthy",
+        "low_sugar"
+      ],
+      "synonyms_zh": [
+        "水果",
+        "苹果"
+      ],
+      "brand": "每日鲜果",
+      "price": 5,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": 1.832332968711853,
+        "y": 0.7750182151794434,
+        "z": -0.6516054272651672
+      },
+      "parent_receptacles": [
+        "Fridge|+01.98|+00.00|-00.54"
+      ],
+      "is_food": true,
+      "is_pickup_required": true
+    },
+    {
+      "product_id": "FloorPlan5_Bowl_000",
+      "object_id": "Bowl|-00.51|+01.12|+00.54",
+      "object_type": "Bowl",
+      "scene": "FloorPlan5",
+      "shelf_id": "shelf_FloorPlan5_022",
+      "display_name_zh": "碗",
+      "display_name_en": "bowl",
+      "category": "container",
+      "attributes": [
+        "container",
+        "placement_target",
+        "cart_like"
+      ],
+      "synonyms_zh": [
+        "碗",
+        "容器"
+      ],
+      "brand": "日用优选",
+      "price": 5,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": true,
+      "position": {
+        "x": -0.5050457119941711,
+        "y": 1.1245540380477905,
+        "z": 0.5390013456344604
+      },
+      "parent_receptacles": [
+        "CounterTop|-00.63|+01.17|+00.57"
+      ],
+      "is_food": false,
+      "is_pickup_required": false
+    },
+    {
+      "product_id": "FloorPlan5_Bread_000",
+      "object_id": "Bread|-01.15|+00.98|-00.19",
+      "object_type": "Bread",
+      "scene": "FloorPlan5",
+      "shelf_id": "shelf_FloorPlan5_021",
+      "display_name_zh": "面包",
+      "display_name_en": "bread",
+      "category": "bakery",
+      "attributes": [
+        "breakfast",
+        "staple_food"
+      ],
+      "synonyms_zh": [
+        "面包",
+        "早餐"
+      ],
+      "brand": "麦香",
+      "price": 12,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": -1.1480002403259277,
+        "y": 0.9816447496414185,
+        "z": -0.19300001859664917
+      },
+      "parent_receptacles": [
+        "CounterTop|-00.67|+00.95|+00.19"
+      ],
+      "is_food": true,
+      "is_pickup_required": true
+    },
+    {
+      "product_id": "FloorPlan5_Fork_000",
+      "object_id": "Fork|-00.75|+00.90|+00.12",
+      "object_type": "Fork",
+      "scene": "FloorPlan5",
+      "shelf_id": "shelf_FloorPlan5_021",
+      "display_name_zh": "叉子",
+      "display_name_en": "fork",
+      "category": "utensil",
+      "attributes": [
+        "utensil"
+      ],
+      "synonyms_zh": [
+        "叉子"
+      ],
+      "brand": "日用优选",
+      "price": 20,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": true,
+      "position": {
+        "x": -0.7505084276199341,
+        "y": 0.9016857147216797,
+        "z": 0.11600601673126221
+      },
+      "parent_receptacles": [
+        "CounterTop|-00.67|+00.95|+00.19"
+      ],
+      "is_food": false,
+      "is_pickup_required": true
+    },
+    {
+      "product_id": "FloorPlan5_Mug_000",
+      "object_id": "Mug|+00.13|+01.12|+00.57",
+      "object_type": "Mug",
+      "scene": "FloorPlan5",
+      "shelf_id": "shelf_FloorPlan5_022",
+      "display_name_zh": "杯子",
+      "display_name_en": "mug",
+      "category": "container",
+      "attributes": [
+        "container",
+        "daily_goods"
+      ],
+      "synonyms_zh": [
+        "杯子",
+        "马克杯"
+      ],
+      "brand": "日用优选",
+      "price": 24,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": true,
+      "position": {
+        "x": 0.13099762797355652,
+        "y": 1.1200095415115356,
+        "z": 0.5670003294944763
+      },
+      "parent_receptacles": [
+        "CounterTop|-00.63|+01.17|+00.57"
+      ],
+      "is_food": false,
+      "is_pickup_required": true
+    },
+    {
+      "product_id": "FloorPlan5_Plate_000",
+      "object_id": "Plate|-01.12|+00.90|-01.65",
+      "object_type": "Plate",
+      "scene": "FloorPlan5",
+      "shelf_id": "shelf_FloorPlan5_020",
+      "display_name_zh": "盘子",
+      "display_name_en": "plate",
+      "category": "container",
+      "attributes": [
+        "container",
+        "placement_target"
+      ],
+      "synonyms_zh": [
+        "盘子",
+        "餐盘"
+      ],
+      "brand": "日用优选",
+      "price": 7,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": -1.1200815439224243,
+        "y": 0.9004376530647278,
+        "z": -1.6547820568084717
+      },
+      "parent_receptacles": [
+        "CounterTop|+01.16|+00.95|-02.01"
+      ],
+      "is_food": false,
+      "is_pickup_required": false
+    },
+    {
+      "product_id": "FloorPlan5_Potato_000",
+      "object_id": "Potato|-00.86|+01.16|+00.63",
+      "object_type": "Potato",
+      "scene": "FloorPlan5",
+      "shelf_id": "shelf_FloorPlan5_022",
+      "display_name_zh": "土豆",
+      "display_name_en": "potato",
+      "category": "vegetable",
+      "attributes": [
+        "vegetable",
+        "staple_food"
+      ],
+      "synonyms_zh": [
+        "土豆",
+        "马铃薯"
+      ],
+      "brand": "田园",
+      "price": 5,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": -0.8589045405387878,
+        "y": 1.1596348285675049,
+        "z": 0.6286824941635132
+      },
+      "parent_receptacles": [
+        "CounterTop|-00.63|+01.17|+00.57"
+      ],
+      "is_food": true,
+      "is_pickup_required": true
+    },
+    {
+      "product_id": "FloorPlan5_Spoon_000",
+      "object_id": "Spoon|-00.06|+00.90|+00.10",
+      "object_type": "Spoon",
+      "scene": "FloorPlan5",
+      "shelf_id": "shelf_FloorPlan5_021",
+      "display_name_zh": "勺子",
+      "display_name_en": "spoon",
+      "category": "utensil",
+      "attributes": [
+        "utensil"
+      ],
+      "synonyms_zh": [
+        "勺子"
+      ],
+      "brand": "日用优选",
+      "price": 13,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": true,
+      "position": {
+        "x": -0.06200554221868515,
+        "y": 0.9003034234046936,
+        "z": 0.1039937362074852
+      },
+      "parent_receptacles": [
+        "CounterTop|-00.67|+00.95|+00.19"
+      ],
+      "is_food": false,
+      "is_pickup_required": true
+    },
+    {
+      "product_id": "FloorPlan5_Tomato_000",
+      "object_id": "Tomato|-01.15|+00.96|-01.66",
+      "object_type": "Tomato",
+      "scene": "FloorPlan5",
+      "shelf_id": "shelf_FloorPlan5_020",
+      "display_name_zh": "番茄",
+      "display_name_en": "tomato",
+      "category": "vegetable",
+      "attributes": [
+        "fresh",
+        "vegetable",
+        "healthy"
+      ],
+      "synonyms_zh": [
+        "番茄",
+        "西红柿"
+      ],
+      "brand": "每日鲜蔬",
+      "price": 5,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": -1.1479060649871826,
+        "y": 0.9577678442001343,
+        "z": -1.6586122512817383
+      },
+      "parent_receptacles": [
+        "CounterTop|+01.16|+00.95|-02.01",
+        "Plate|-01.12|+00.90|-01.65"
+      ],
+      "is_food": true,
+      "is_pickup_required": true
+    }
+  ],
+  "shelf_graph": [
+    {
+      "shelf_id": "shelf_FloorPlan1_010",
+      "source_object_id": "shelf_FloorPlan1_010"
+    },
+    {
+      "shelf_id": "shelf_FloorPlan1_023",
+      "source_object_id": "shelf_FloorPlan1_023"
+    },
+    {
+      "shelf_id": "shelf_FloorPlan1_005",
+      "source_object_id": "shelf_FloorPlan1_005"
+    },
+    {
+      "shelf_id": "shelf_FloorPlan1_021",
+      "source_object_id": "shelf_FloorPlan1_021"
+    },
+    {
+      "shelf_id": "shelf_FloorPlan1_013",
+      "source_object_id": "shelf_FloorPlan1_013"
+    },
+    {
+      "shelf_id": "shelf_FloorPlan1_011",
+      "source_object_id": "shelf_FloorPlan1_011"
+    },
+    {
+      "shelf_id": "shelf_FloorPlan1_003",
+      "source_object_id": "shelf_FloorPlan1_003"
+    },
+    {
+      "shelf_id": "shelf_FloorPlan2_024",
+      "source_object_id": "shelf_FloorPlan2_024"
+    },
+    {
+      "shelf_id": "shelf_FloorPlan2_010",
+      "source_object_id": "shelf_FloorPlan2_010"
+    },
+    {
+      "shelf_id": "shelf_FloorPlan2_007",
+      "source_object_id": "shelf_FloorPlan2_007"
+    },
+    {
+      "shelf_id": "shelf_FloorPlan2_009",
+      "source_object_id": "shelf_FloorPlan2_009"
+    },
+    {
+      "shelf_id": "shelf_FloorPlan3_004",
+      "source_object_id": "shelf_FloorPlan3_004"
+    },
+    {
+      "shelf_id": "shelf_FloorPlan3_013",
+      "source_object_id": "shelf_FloorPlan3_013"
+    },
+    {
+      "shelf_id": "shelf_FloorPlan4_003",
+      "source_object_id": "shelf_FloorPlan4_003"
+    },
+    {
+      "shelf_id": "shelf_FloorPlan4_005",
+      "source_object_id": "shelf_FloorPlan4_005"
+    },
+    {
+      "shelf_id": "shelf_FloorPlan4_012",
+      "source_object_id": "shelf_FloorPlan4_012"
+    },
+    {
+      "shelf_id": "shelf_FloorPlan5_026",
+      "source_object_id": "shelf_FloorPlan5_026"
+    },
+    {
+      "shelf_id": "shelf_FloorPlan5_022",
+      "source_object_id": "shelf_FloorPlan5_022"
+    },
+    {
+      "shelf_id": "shelf_FloorPlan5_021",
+      "source_object_id": "shelf_FloorPlan5_021"
+    },
+    {
+      "shelf_id": "shelf_FloorPlan5_020",
+      "source_object_id": "shelf_FloorPlan5_020"
+    }
+  ],
+  "npc_dialogue": [],
+  "high_level_plan": [
+    {
+      "action": "navigate_to_shelf",
+      "args": {
+        "shelf_id": "shelf_FloorPlan1_023"
+      },
+      "preconditions": [],
+      "expected_effects": [],
+      "sim_actions": [
+        {
+          "action": "Teleport"
+        }
+      ],
+      "success": true,
+      "failure_reason": null
+    },
+    {
+      "action": "search_object",
+      "args": {
+        "query": "帮我找一个 10 元以内的饮料"
+      },
+      "preconditions": [],
+      "expected_effects": [],
+      "sim_actions": [
+        {
+          "action": "Done"
+        }
+      ],
+      "success": true,
+      "failure_reason": null
+    },
+    {
+      "action": "look_at",
+      "args": {
+        "object_id": "Bottle|+01.54|+00.89|-02.54"
+      },
+      "preconditions": [],
+      "expected_effects": [],
+      "sim_actions": [
+        {
+          "action": "Teleport"
+        }
+      ],
+      "success": true,
+      "failure_reason": null
+    },
+    {
+      "action": "answer_user",
+      "args": {
+        "text": "我找到了饮料。"
+      },
+      "preconditions": [],
+      "expected_effects": [],
+      "sim_actions": [
+        {
+          "action": "Done"
+        }
+      ],
+      "success": true,
+      "failure_reason": null
+    },
+    {
+      "action": "finish",
+      "args": {},
+      "preconditions": [],
+      "expected_effects": [],
+      "sim_actions": [
+        {
+          "action": "Done"
+        }
+      ],
+      "success": true,
+      "failure_reason": null
+    }
+  ],
+  "sim_action_trace": [
+    {
+      "action": "Teleport",
+      "success": true
+    },
+    {
+      "action": "Done",
+      "success": true
+    },
+    {
+      "action": "Teleport",
+      "success": true
+    },
+    {
+      "action": "Done",
+      "success": true
+    },
+    {
+      "action": "Done",
+      "success": true
+    }
+  ],
+  "observations": [
+    {
+      "step_idx": 0,
+      "rgb_path": "images/episode_000009_step_000_rgb.png",
+      "depth_path": null,
+      "segmentation_path": null,
+      "metadata_path": "episodes/episode_000009_step_000_metadata.json",
+      "agent_pose": {},
+      "held_object": null
+    },
+    {
+      "step_idx": 1,
+      "rgb_path": "images/episode_000009_step_001_rgb.png",
+      "depth_path": null,
+      "segmentation_path": null,
+      "metadata_path": "episodes/episode_000009_step_001_metadata.json",
+      "agent_pose": {},
+      "held_object": null
+    },
+    {
+      "step_idx": 2,
+      "rgb_path": "images/episode_000009_step_002_rgb.png",
+      "depth_path": null,
+      "segmentation_path": null,
+      "metadata_path": "episodes/episode_000009_step_002_metadata.json",
+      "agent_pose": {},
+      "held_object": null
+    },
+    {
+      "step_idx": 3,
+      "rgb_path": "images/episode_000009_step_003_rgb.png",
+      "depth_path": null,
+      "segmentation_path": null,
+      "metadata_path": "episodes/episode_000009_step_003_metadata.json",
+      "agent_pose": {},
+      "held_object": null
+    },
+    {
+      "step_idx": 4,
+      "rgb_path": "images/episode_000009_step_004_rgb.png",
+      "depth_path": null,
+      "segmentation_path": null,
+      "metadata_path": "episodes/episode_000009_step_004_metadata.json",
+      "agent_pose": {},
+      "held_object": null
+    }
+  ],
+  "metrics": {
+    "target_found": true,
+    "dialogue_resolved": false,
+    "substitute_valid": false,
+    "pickup_success": false,
+    "placement_success": false,
+    "num_high_level_steps": 5,
+    "num_sim_steps": 5,
+    "num_dialogue_turns": 0,
+    "used_force_action": false,
+    "final_distance_to_target": null
+  },
+  "success": true,
+  "failure_reason": null,
+  "provenance": {
+    "generator": "retail_thor.generator.build_episode",
+    "generated_at": "2026-06-30T10:09:19.351019",
+    "randomization": {
+      "random_seed": 0,
+      "random_spawn_success": false,
+      "mode": "demo_placeholder"
+    },
+    "observation_source": "demo_placeholder"
+  }
+}

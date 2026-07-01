@@ -1,0 +1,115 @@
+{
+  "id": "resp_018f7e53e9c27241006a43b2edf64c8194b805e835b1990eb1",
+  "created_at": 1782821614.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "gpt-4o-mini",
+  "object": "response",
+  "output": [
+    {
+      "id": "msg_018f7e53e9c27241006a43b2f148b08194935015636e97de7d",
+      "content": [
+        {
+          "annotations": [],
+          "text": "{\"action\":\"PickupObject\",\"confidence\":0.95,\"question_text\":\"\",\"rationale\":\"The agent is now close enough to pick up the red mug from the source shelf position. The product is visible, and the agent is not currently holding anything, allowing for a successful pickup attempt.\"}",
+          "type": "output_text",
+          "logprobs": []
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message",
+      "phase": null
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "completed_at": 1782821619.0,
+  "conversation": null,
+  "max_output_tokens": null,
+  "max_tool_calls": null,
+  "moderation": null,
+  "previous_response_id": null,
+  "prompt": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "in_memory",
+  "reasoning": {
+    "context": null,
+    "effort": null,
+    "generate_summary": null,
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "name": "product_manipulation_decision",
+      "schema_": {
+        "additionalProperties": false,
+        "properties": {
+          "action": {
+            "enum": [
+              "MoveAhead",
+              "RotateLeft",
+              "RotateRight",
+              "LookUp",
+              "LookDown",
+              "Done",
+              "AskQuestion",
+              "PickupObject",
+              "DropObject"
+            ],
+            "type": "string"
+          },
+          "confidence": {
+            "maximum": 1,
+            "minimum": 0,
+            "type": "number"
+          },
+          "question_text": {
+            "type": "string"
+          },
+          "rationale": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "action",
+          "question_text",
+          "rationale",
+          "confidence"
+        ],
+        "type": "object"
+      },
+      "type": "json_schema",
+      "description": null,
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "top_logprobs": 0,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 47105,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 59,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 47164
+  },
+  "user": null,
+  "content_filters": null,
+  "frequency_penalty": 0.0,
+  "presence_penalty": 0.0,
+  "store": true
+}

@@ -1,0 +1,7 @@
+{
+  "episode_id": "episode_000019",
+  "step_idx": 1,
+  "scene": "FloorPlan1",
+  "action": "recommend_substitute",
+  "demo_placeholder": true
+}

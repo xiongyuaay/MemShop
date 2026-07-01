@@ -1,0 +1,23 @@
+[
+  {
+    "asset_group": "humanoid_robot_reference",
+    "source_path_or_doc": "InternUtopia/README.md; InternUtopia/internutopia/demo/h1_locomotion.py; InternUtopia/internutopia/demo/gr1_teleop.py",
+    "usable_in_phase1": false,
+    "license_or_access_note": "Read project license and asset access terms before reuse.",
+    "how_to_use_as_reference": "Use H1/G1/GR1 examples as robot appearance and high-level capability references only."
+  },
+  {
+    "asset_group": "tabletop_manipulation_layout",
+    "source_path_or_doc": "InternUtopia/internutopia/demo/franka_manipulation.py",
+    "usable_in_phase1": false,
+    "license_or_access_note": "Read project license and asset access terms before reuse.",
+    "how_to_use_as_reference": "Use object-on-table arrangement as inspiration for pick-and-place task staging."
+  },
+  {
+    "asset_group": "grscenes_commercial_objects",
+    "source_path_or_doc": "InternUtopia/README.md",
+    "usable_in_phase1": false,
+    "license_or_access_note": "GRScenes assets require dataset access agreement.",
+    "how_to_use_as_reference": "Use commercial object categories as future custom shelf design inspiration."
+  }
+]

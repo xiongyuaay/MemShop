@@ -1,0 +1,319 @@
+{
+  "episode_id": "episode_000019",
+  "schema_version": "0.1.0",
+  "backend": "ai2thor",
+  "scene": "FloorPlan1",
+  "random_seed": 0,
+  "capability_family": [
+    "social_loco_navigation"
+  ],
+  "task_type": "dialogue_find_or_substitute",
+  "prompt": "帮我找一个吃的",
+  "target": {
+    "constraint": {},
+    "candidate_product_ids": [],
+    "target_product_id": "bread",
+    "target_object_id": "Bread|demo"
+  },
+  "episode_idx": 19,
+  "max_steps": 20,
+  "instruction": "帮我找一个吃的",
+  "initial_state": {
+    "agent_pose": {},
+    "held_object": null
+  },
+  "product_catalog": [
+    {
+      "product_id": "apple",
+      "object_id": "Apple|demo",
+      "object_type": "Apple",
+      "scene": "FloorPlan1",
+      "shelf_id": "shelf_demo_001",
+      "source_receptacle_id": "shelf_demo_001",
+      "display_name_zh": "苹果",
+      "category": "fruit",
+      "attributes": [
+        "fresh",
+        "healthy"
+      ],
+      "brand": "demo",
+      "price": 6,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": true,
+      "position": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "is_food": true
+    },
+    {
+      "product_id": "bread",
+      "object_id": "Bread|demo",
+      "object_type": "Bread",
+      "scene": "FloorPlan1",
+      "shelf_id": "shelf_demo_002",
+      "source_receptacle_id": "shelf_demo_002",
+      "display_name_zh": "面包",
+      "category": "bakery",
+      "attributes": [
+        "breakfast"
+      ],
+      "brand": "demo",
+      "price": 8,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": true,
+      "position": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "is_food": true
+    },
+    {
+      "product_id": "bottle",
+      "object_id": "Bottle|demo",
+      "object_type": "Bottle",
+      "scene": "FloorPlan1",
+      "shelf_id": "shelf_demo_003",
+      "source_receptacle_id": "shelf_demo_003",
+      "display_name_zh": "饮料",
+      "category": "drink",
+      "attributes": [
+        "bottled",
+        "cold_drink"
+      ],
+      "brand": "demo",
+      "price": 4,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": true,
+      "position": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "is_food": true
+    }
+  ],
+  "shelf_graph": [
+    {
+      "shelf_id": "shelf_demo_001",
+      "source_object_id": "shelf_demo_001"
+    },
+    {
+      "shelf_id": "shelf_demo_002",
+      "source_object_id": "shelf_demo_002"
+    },
+    {
+      "shelf_id": "shelf_demo_003",
+      "source_object_id": "shelf_demo_003"
+    }
+  ],
+  "npc_dialogue": [
+    {
+      "speaker": "robot",
+      "utterance": "你想找哪一类商品，或者有什么偏好的属性？",
+      "intent": "clarify_product_constraint",
+      "state_delta": {}
+    }
+  ],
+  "high_level_plan": [
+    {
+      "action": "ask_npc",
+      "args": {
+        "instruction": "帮我找一个吃的"
+      },
+      "preconditions": [],
+      "expected_effects": [],
+      "sim_actions": [
+        {
+          "action": "Done"
+        }
+      ],
+      "success": true,
+      "failure_reason": null
+    },
+    {
+      "action": "navigate_to_shelf",
+      "args": {
+        "shelf_id": "shelf_demo_002"
+      },
+      "preconditions": [],
+      "expected_effects": [],
+      "sim_actions": [
+        {
+          "action": "Teleport"
+        }
+      ],
+      "success": true,
+      "failure_reason": null
+    },
+    {
+      "action": "search_object",
+      "args": {
+        "query": "帮我找一个吃的"
+      },
+      "preconditions": [],
+      "expected_effects": [],
+      "sim_actions": [
+        {
+          "action": "Done"
+        }
+      ],
+      "success": true,
+      "failure_reason": null
+    },
+    {
+      "action": "look_at",
+      "args": {
+        "object_id": "Bread|demo"
+      },
+      "preconditions": [],
+      "expected_effects": [],
+      "sim_actions": [
+        {
+          "action": "Teleport"
+        }
+      ],
+      "success": true,
+      "failure_reason": null
+    },
+    {
+      "action": "answer_user",
+      "args": {
+        "text": "我找到了面包。"
+      },
+      "preconditions": [],
+      "expected_effects": [],
+      "sim_actions": [
+        {
+          "action": "Done"
+        }
+      ],
+      "success": true,
+      "failure_reason": null
+    },
+    {
+      "action": "finish",
+      "args": {},
+      "preconditions": [],
+      "expected_effects": [],
+      "sim_actions": [
+        {
+          "action": "Done"
+        }
+      ],
+      "success": true,
+      "failure_reason": null
+    }
+  ],
+  "sim_action_trace": [
+    {
+      "action": "Done",
+      "success": true
+    },
+    {
+      "action": "Teleport",
+      "success": true
+    },
+    {
+      "action": "Done",
+      "success": true
+    },
+    {
+      "action": "Teleport",
+      "success": true
+    },
+    {
+      "action": "Done",
+      "success": true
+    },
+    {
+      "action": "Done",
+      "success": true
+    }
+  ],
+  "observations": [
+    {
+      "step_idx": 0,
+      "rgb_path": "images/episode_000019_step_000_rgb.png",
+      "depth_path": null,
+      "segmentation_path": null,
+      "metadata_path": "episodes/episode_000019_step_000_metadata.json",
+      "agent_pose": {},
+      "held_object": null
+    },
+    {
+      "step_idx": 1,
+      "rgb_path": "images/episode_000019_step_001_rgb.png",
+      "depth_path": null,
+      "segmentation_path": null,
+      "metadata_path": "episodes/episode_000019_step_001_metadata.json",
+      "agent_pose": {},
+      "held_object": null
+    },
+    {
+      "step_idx": 2,
+      "rgb_path": "images/episode_000019_step_002_rgb.png",
+      "depth_path": null,
+      "segmentation_path": null,
+      "metadata_path": "episodes/episode_000019_step_002_metadata.json",
+      "agent_pose": {},
+      "held_object": null
+    },
+    {
+      "step_idx": 3,
+      "rgb_path": "images/episode_000019_step_003_rgb.png",
+      "depth_path": null,
+      "segmentation_path": null,
+      "metadata_path": "episodes/episode_000019_step_003_metadata.json",
+      "agent_pose": {},
+      "held_object": null
+    },
+    {
+      "step_idx": 4,
+      "rgb_path": "images/episode_000019_step_004_rgb.png",
+      "depth_path": null,
+      "segmentation_path": null,
+      "metadata_path": "episodes/episode_000019_step_004_metadata.json",
+      "agent_pose": {},
+      "held_object": null
+    },
+    {
+      "step_idx": 5,
+      "rgb_path": "images/episode_000019_step_005_rgb.png",
+      "depth_path": null,
+      "segmentation_path": null,
+      "metadata_path": "episodes/episode_000019_step_005_metadata.json",
+      "agent_pose": {},
+      "held_object": null
+    }
+  ],
+  "metrics": {
+    "target_found": true,
+    "dialogue_resolved": true,
+    "substitute_valid": false,
+    "pickup_success": false,
+    "placement_success": false,
+    "num_high_level_steps": 6,
+    "num_sim_steps": 6,
+    "num_dialogue_turns": 1,
+    "used_force_action": false,
+    "final_distance_to_target": null
+  },
+  "success": false,
+  "failure_reason": "ambiguous_instruction_unresolved",
+  "provenance": {
+    "generator": "retail_thor.generator.build_episode",
+    "generated_at": "2026-06-30T00:40:39.590658",
+    "randomization": {
+      "random_seed": 0,
+      "random_spawn_success": false,
+      "mode": "demo_placeholder"
+    },
+    "observation_source": "demo_placeholder"
+  }
+}

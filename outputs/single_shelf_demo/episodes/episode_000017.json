@@ -1,0 +1,431 @@
+{
+  "episode_id": "episode_000017",
+  "schema_version": "0.1.0",
+  "backend": "ai2thor",
+  "scene": "FloorPlan1",
+  "random_seed": 0,
+  "capability_family": [
+    "loco_manipulation"
+  ],
+  "task_type": "pick_and_place",
+  "prompt": "帮我把苹果放到购物栏",
+  "target": {
+    "constraint": {
+      "category": "fruit"
+    },
+    "candidate_product_ids": [
+      "FloorPlan1_Apple_000"
+    ],
+    "placement": "cart",
+    "target_product_id": "FloorPlan1_Apple_000",
+    "target_object_id": "Apple|-00.47|+01.15|+00.48"
+  },
+  "episode_idx": 17,
+  "max_steps": 20,
+  "instruction": "帮我把苹果放到购物栏",
+  "initial_state": {
+    "agent_pose": {},
+    "held_object": null
+  },
+  "product_catalog": [
+    {
+      "product_id": "FloorPlan1_Apple_000",
+      "object_id": "Apple|-00.47|+01.15|+00.48",
+      "object_type": "Apple",
+      "scene": "FloorPlan1",
+      "shelf_id": "shelf_FloorPlan1_010",
+      "source_receptacle_id": "CounterTop|-00.08|+01.15|00.00",
+      "display_name_zh": "苹果",
+      "display_name_en": "apple",
+      "category": "fruit",
+      "attributes": [
+        "fresh",
+        "healthy",
+        "low_sugar"
+      ],
+      "synonyms_zh": [
+        "水果",
+        "苹果"
+      ],
+      "brand": "每日鲜果",
+      "price": 4,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": -0.4651530981063843,
+        "y": 1.151225209236145,
+        "z": 0.47573569416999817
+      },
+      "parent_receptacles": [
+        "CounterTop|-00.08|+01.15|00.00"
+      ],
+      "is_food": true,
+      "is_pickup_required": true,
+      "scene_randomization": {
+        "randomized": false,
+        "random_seed": null,
+        "random_spawn_success": null,
+        "error_message": ""
+      }
+    },
+    {
+      "product_id": "FloorPlan1_Bowl_000",
+      "object_id": "Bowl|+00.27|+01.10|-00.75",
+      "object_type": "Bowl",
+      "scene": "FloorPlan1",
+      "shelf_id": "shelf_FloorPlan1_010",
+      "source_receptacle_id": "CounterTop|-00.08|+01.15|00.00",
+      "display_name_zh": "碗",
+      "display_name_en": "bowl",
+      "category": "container",
+      "attributes": [
+        "container",
+        "placement_target",
+        "cart_like"
+      ],
+      "synonyms_zh": [
+        "碗",
+        "容器"
+      ],
+      "brand": "日用优选",
+      "price": 7,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": 0.2731872498989105,
+        "y": 1.1010280847549438,
+        "z": -0.7532859444618225
+      },
+      "parent_receptacles": [
+        "CounterTop|-00.08|+01.15|00.00"
+      ],
+      "is_food": false,
+      "is_pickup_required": false,
+      "scene_randomization": {
+        "randomized": false,
+        "random_seed": null,
+        "random_spawn_success": null,
+        "error_message": ""
+      }
+    },
+    {
+      "product_id": "FloorPlan1_Bread_000",
+      "object_id": "Bread|-00.52|+01.17|-00.03",
+      "object_type": "Bread",
+      "scene": "FloorPlan1",
+      "shelf_id": "shelf_FloorPlan1_010",
+      "source_receptacle_id": "CounterTop|-00.08|+01.15|00.00",
+      "display_name_zh": "面包",
+      "display_name_en": "bread",
+      "category": "bakery",
+      "attributes": [
+        "breakfast",
+        "staple_food"
+      ],
+      "synonyms_zh": [
+        "面包",
+        "早餐"
+      ],
+      "brand": "麦香",
+      "price": 14,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": -0.522383451461792,
+        "y": 1.1704490184783936,
+        "z": -0.028279855847358704
+      },
+      "parent_receptacles": [
+        "CounterTop|-00.08|+01.15|00.00"
+      ],
+      "is_food": true,
+      "is_pickup_required": true,
+      "scene_randomization": {
+        "randomized": false,
+        "random_seed": null,
+        "random_spawn_success": null,
+        "error_message": ""
+      }
+    },
+    {
+      "product_id": "FloorPlan1_Tomato_000",
+      "object_id": "Tomato|-00.39|+01.14|-00.81",
+      "object_type": "Tomato",
+      "scene": "FloorPlan1",
+      "shelf_id": "shelf_FloorPlan1_010",
+      "source_receptacle_id": "CounterTop|-00.08|+01.15|00.00",
+      "display_name_zh": "番茄",
+      "display_name_en": "tomato",
+      "category": "vegetable",
+      "attributes": [
+        "fresh",
+        "vegetable",
+        "healthy"
+      ],
+      "synonyms_zh": [
+        "番茄",
+        "西红柿"
+      ],
+      "brand": "田园",
+      "price": 6,
+      "stock_status": "in_stock",
+      "pickupable": true,
+      "visible_at_start": false,
+      "position": {
+        "x": -0.3850001394748688,
+        "y": 1.13701331615448,
+        "z": -0.812004804611206
+      },
+      "parent_receptacles": [
+        "CounterTop|-00.08|+01.15|00.00"
+      ],
+      "is_food": true,
+      "is_pickup_required": true,
+      "scene_randomization": {
+        "randomized": false,
+        "random_seed": null,
+        "random_spawn_success": null,
+        "error_message": ""
+      }
+    }
+  ],
+  "shelf_graph": [
+    {
+      "shelf_id": "shelf_FloorPlan1_010",
+      "source_object_id": "CounterTop|-00.08|+01.15|00.00"
+    }
+  ],
+  "npc_dialogue": [],
+  "high_level_plan": [
+    {
+      "action": "navigate_to_shelf",
+      "args": {
+        "shelf_id": "shelf_FloorPlan1_010"
+      },
+      "preconditions": [],
+      "expected_effects": [],
+      "sim_actions": [
+        {
+          "action": "Teleport"
+        }
+      ],
+      "success": true,
+      "failure_reason": null
+    },
+    {
+      "action": "search_object",
+      "args": {
+        "query": "帮我把苹果放到购物栏"
+      },
+      "preconditions": [],
+      "expected_effects": [],
+      "sim_actions": [
+        {
+          "action": "Done"
+        }
+      ],
+      "success": true,
+      "failure_reason": null
+    },
+    {
+      "action": "look_at",
+      "args": {
+        "object_id": "Apple|-00.47|+01.15|+00.48"
+      },
+      "preconditions": [],
+      "expected_effects": [],
+      "sim_actions": [
+        {
+          "action": "Teleport"
+        }
+      ],
+      "success": true,
+      "failure_reason": null
+    },
+    {
+      "action": "answer_user",
+      "args": {
+        "text": "我找到了苹果。"
+      },
+      "preconditions": [],
+      "expected_effects": [],
+      "sim_actions": [
+        {
+          "action": "Done"
+        }
+      ],
+      "success": true,
+      "failure_reason": null
+    },
+    {
+      "action": "pick_object",
+      "args": {
+        "object_id": "Apple|-00.47|+01.15|+00.48"
+      },
+      "preconditions": [],
+      "expected_effects": [],
+      "sim_actions": [
+        {
+          "action": "PickupObject"
+        }
+      ],
+      "success": true,
+      "failure_reason": null
+    },
+    {
+      "action": "place_object",
+      "args": {
+        "target": "cart"
+      },
+      "preconditions": [],
+      "expected_effects": [],
+      "sim_actions": [
+        {
+          "action": "PutObject"
+        }
+      ],
+      "success": true,
+      "failure_reason": null
+    },
+    {
+      "action": "finish",
+      "args": {},
+      "preconditions": [],
+      "expected_effects": [],
+      "sim_actions": [
+        {
+          "action": "Done"
+        }
+      ],
+      "success": true,
+      "failure_reason": null
+    }
+  ],
+  "sim_action_trace": [
+    {
+      "action": "Teleport",
+      "success": true
+    },
+    {
+      "action": "Done",
+      "success": true
+    },
+    {
+      "action": "Teleport",
+      "success": true
+    },
+    {
+      "action": "Done",
+      "success": true
+    },
+    {
+      "action": "PickupObject",
+      "success": true
+    },
+    {
+      "action": "PutObject",
+      "success": true
+    },
+    {
+      "action": "Done",
+      "success": true
+    }
+  ],
+  "observations": [
+    {
+      "step_idx": 0,
+      "rgb_path": "images/episode_000017_step_000_rgb.png",
+      "depth_path": null,
+      "segmentation_path": null,
+      "metadata_path": "episodes/episode_000017_step_000_metadata.json",
+      "agent_pose": {},
+      "held_object": null
+    },
+    {
+      "step_idx": 1,
+      "rgb_path": "images/episode_000017_step_001_rgb.png",
+      "depth_path": null,
+      "segmentation_path": null,
+      "metadata_path": "episodes/episode_000017_step_001_metadata.json",
+      "agent_pose": {},
+      "held_object": null
+    },
+    {
+      "step_idx": 2,
+      "rgb_path": "images/episode_000017_step_002_rgb.png",
+      "depth_path": null,
+      "segmentation_path": null,
+      "metadata_path": "episodes/episode_000017_step_002_metadata.json",
+      "agent_pose": {},
+      "held_object": null
+    },
+    {
+      "step_idx": 3,
+      "rgb_path": "images/episode_000017_step_003_rgb.png",
+      "depth_path": null,
+      "segmentation_path": null,
+      "metadata_path": "episodes/episode_000017_step_003_metadata.json",
+      "agent_pose": {},
+      "held_object": null
+    },
+    {
+      "step_idx": 4,
+      "rgb_path": "images/episode_000017_step_004_rgb.png",
+      "depth_path": null,
+      "segmentation_path": null,
+      "metadata_path": "episodes/episode_000017_step_004_metadata.json",
+      "agent_pose": {},
+      "held_object": null
+    },
+    {
+      "step_idx": 5,
+      "rgb_path": "images/episode_000017_step_005_rgb.png",
+      "depth_path": null,
+      "segmentation_path": null,
+      "metadata_path": "episodes/episode_000017_step_005_metadata.json",
+      "agent_pose": {},
+      "held_object": null
+    },
+    {
+      "step_idx": 6,
+      "rgb_path": "images/episode_000017_step_006_rgb.png",
+      "depth_path": null,
+      "segmentation_path": null,
+      "metadata_path": "episodes/episode_000017_step_006_metadata.json",
+      "agent_pose": {},
+      "held_object": null
+    }
+  ],
+  "metrics": {
+    "target_found": true,
+    "dialogue_resolved": false,
+    "substitute_valid": false,
+    "pickup_success": true,
+    "placement_success": true,
+    "num_high_level_steps": 7,
+    "num_sim_steps": 7,
+    "num_dialogue_turns": 0,
+    "used_force_action": false,
+    "final_distance_to_target": null
+  },
+  "success": true,
+  "failure_reason": null,
+  "provenance": {
+    "generator": "retail_thor.generator.build_episode",
+    "generated_at": "2026-06-30T11:08:50.681665",
+    "randomization": {
+      "randomized": false,
+      "random_seed": null,
+      "random_spawn_success": null,
+      "error_message": ""
+    },
+    "generation": {
+      "random_seed": 0,
+      "mode": "demo_placeholder"
+    },
+    "observation_source": "demo_placeholder"
+  }
+}

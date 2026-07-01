@@ -1,0 +1,13 @@
+{
+  "utterance": "The shape is cylindrical with a handle.",
+  "rationale": "Based on the hidden target product details, the description aligns as it features a handle and a cylindrical cup shape.",
+  "product_id": "shape_red_cup_cylinder_001",
+  "wkm_calls": [
+    {
+      "api": "get_product",
+      "args": {
+        "product_id": "shape_red_cup_cylinder_001"
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+find_product:
+  - instruction: 帮我找一个水果
+    constraint:
+      category: fruit
+  - instruction: 帮我找一个健康食品
+    constraint:
+      attribute: healthy
+  - instruction: 帮我找一个适合早餐的商品
+    constraint:
+      attribute: breakfast
+  - instruction: 帮我找一个能装东西的商品
+    constraint:
+      category: container
+
+dialogue_find_or_substitute:
+  - instruction: 帮我找一个吃的
+    expected_dialogue: clarify
+  - instruction: 如果没有酸奶，帮我找一个健康食品
+    expected_dialogue: substitute
+
+pick_and_place:
+  - instruction: 帮我把苹果放到购物栏
+    constraint:
+      category: fruit
+    placement: cart
+  - instruction: 帮我把早餐食品放到台面上
+    constraint:
+      attribute: breakfast
+    placement: counter

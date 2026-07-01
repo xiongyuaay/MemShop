@@ -1,0 +1,517 @@
+{
+  "success": true,
+  "scene": "FloorPlan1",
+  "shelf": {
+    "enabled": true,
+    "scene": "FloorPlan1",
+    "shelf_id": "shelf_FloorPlan1_010",
+    "source_object_id": "CounterTop|-00.08|+01.15|00.00",
+    "source_object_type": "CounterTop",
+    "semantic_zone": "open_shelf",
+    "description": "Default one-shelf retail demo surface."
+  },
+  "catalog_product_types": [
+    "Apple",
+    "Bowl",
+    "Bread",
+    "Tomato"
+  ],
+  "probe_candidates": [
+    {
+      "side": "z_minus",
+      "position": {
+        "x": 0.0,
+        "y": 0.900999128818512,
+        "z": -1.25
+      },
+      "yaw": -3.61917143168334,
+      "success": true,
+      "visible_products": [
+        {
+          "object_id": "Bowl|+00.27|+01.10|-00.75",
+          "object_type": "Bowl"
+        },
+        {
+          "object_id": "Bread|-00.52|+01.17|-00.03",
+          "object_type": "Bread"
+        },
+        {
+          "object_id": "Tomato|-00.39|+01.14|-00.81",
+          "object_type": "Tomato"
+        }
+      ],
+      "visible_count": 3,
+      "distance_to_shelf": 1.2514959050895136
+    },
+    {
+      "side": "z_plus",
+      "position": {
+        "x": 0.0,
+        "y": 0.900999128818512,
+        "z": 1.25
+      },
+      "yaw": -176.38659927217822,
+      "success": true,
+      "visible_products": [
+        {
+          "object_id": "Apple|-00.47|+01.15|+00.48",
+          "object_type": "Apple"
+        },
+        {
+          "object_id": "Bread|-00.52|+01.17|-00.03",
+          "object_type": "Bread"
+        }
+      ],
+      "visible_count": 2,
+      "distance_to_shelf": 1.253491922867199
+    },
+    {
+      "side": "x_minus",
+      "position": {
+        "x": -1.25,
+        "y": 0.900999128818512,
+        "z": 0.0
+      },
+      "yaw": 90.04892892270233,
+      "success": true,
+      "visible_products": [
+        {
+          "object_id": "Apple|-00.47|+01.15|+00.48",
+          "object_type": "Apple"
+        },
+        {
+          "object_id": "Bread|-00.52|+01.17|-00.03",
+          "object_type": "Bread"
+        },
+        {
+          "object_id": "Tomato|-00.39|+01.14|-00.81",
+          "object_type": "Tomato"
+        }
+      ],
+      "visible_count": 3,
+      "distance_to_shelf": 1.1710004233495632
+    },
+    {
+      "side": "x_plus",
+      "position": {
+        "x": 1.25,
+        "y": 0.900999128818512,
+        "z": 0.0
+      },
+      "yaw": -90.04311194226081,
+      "success": true,
+      "visible_products": [
+        {
+          "object_id": "Bowl|+00.27|+01.10|-00.75",
+          "object_type": "Bowl"
+        }
+      ],
+      "visible_count": 1,
+      "distance_to_shelf": 1.3290003798585885
+    }
+  ],
+  "selected_start": {
+    "side": "x_minus",
+    "position": {
+      "x": -1.25,
+      "y": 0.900999128818512,
+      "z": 0.0
+    },
+    "yaw": 90.04892892270233,
+    "success": true,
+    "visible_products": [
+      {
+        "object_id": "Apple|-00.47|+01.15|+00.48",
+        "object_type": "Apple"
+      },
+      {
+        "object_id": "Bread|-00.52|+01.17|-00.03",
+        "object_type": "Bread"
+      },
+      {
+        "object_id": "Tomato|-00.39|+01.14|-00.81",
+        "object_type": "Tomato"
+      }
+    ],
+    "visible_count": 3,
+    "distance_to_shelf": 1.1710004233495632
+  },
+  "steps": [
+    {
+      "step_idx": 0,
+      "action": "Teleport(start_face_shelf)",
+      "success": true,
+      "agent": {
+        "name": "agent",
+        "position": {
+          "x": -1.25,
+          "y": 0.900999128818512,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": -0.0,
+          "y": 90.0489273071289,
+          "z": 0.0
+        },
+        "cameraHorizon": 25.0,
+        "isStanding": true,
+        "inHighFrictionArea": false,
+        "fpinColliderSize": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "fpinColliderWorldCenter": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "fpinColliderAgentRelativeCenter": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "visible_products": [
+        {
+          "object_id": "Apple|-00.47|+01.15|+00.48",
+          "object_type": "Apple"
+        },
+        {
+          "object_id": "Bread|-00.52|+01.17|-00.03",
+          "object_type": "Bread"
+        },
+        {
+          "object_id": "Tomato|-00.39|+01.14|-00.81",
+          "object_type": "Tomato"
+        }
+      ],
+      "rgb_path": "outputs/walk_shelf_demo/walk_step_000_start_face_shelf.png",
+      "annotated_path": "outputs/walk_shelf_demo/walk_step_000_start_face_shelf_annotated.png",
+      "error_message": ""
+    },
+    {
+      "step_idx": 1,
+      "action": "MoveRight",
+      "success": true,
+      "agent": {
+        "name": "agent",
+        "position": {
+          "x": -1.25,
+          "y": 0.900999128818512,
+          "z": -0.25
+        },
+        "rotation": {
+          "x": -0.0,
+          "y": 90.0489273071289,
+          "z": 0.0
+        },
+        "cameraHorizon": 25.0,
+        "isStanding": true,
+        "inHighFrictionArea": false,
+        "fpinColliderSize": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "fpinColliderWorldCenter": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "fpinColliderAgentRelativeCenter": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "visible_products": [
+        {
+          "object_id": "Apple|-00.47|+01.15|+00.48",
+          "object_type": "Apple"
+        },
+        {
+          "object_id": "Bread|-00.52|+01.17|-00.03",
+          "object_type": "Bread"
+        },
+        {
+          "object_id": "Tomato|-00.39|+01.14|-00.81",
+          "object_type": "Tomato"
+        }
+      ],
+      "rgb_path": "outputs/walk_shelf_demo/walk_step_001_MoveRight.png",
+      "annotated_path": "outputs/walk_shelf_demo/walk_step_001_MoveRight_annotated.png",
+      "error_message": ""
+    },
+    {
+      "step_idx": 2,
+      "action": "MoveRight",
+      "success": true,
+      "agent": {
+        "name": "agent",
+        "position": {
+          "x": -1.25,
+          "y": 0.900999128818512,
+          "z": -0.5
+        },
+        "rotation": {
+          "x": -0.0,
+          "y": 90.0489273071289,
+          "z": 0.0
+        },
+        "cameraHorizon": 25.0,
+        "isStanding": true,
+        "inHighFrictionArea": false,
+        "fpinColliderSize": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "fpinColliderWorldCenter": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "fpinColliderAgentRelativeCenter": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "visible_products": [
+        {
+          "object_id": "Apple|-00.47|+01.15|+00.48",
+          "object_type": "Apple"
+        },
+        {
+          "object_id": "Bowl|+00.27|+01.10|-00.75",
+          "object_type": "Bowl"
+        },
+        {
+          "object_id": "Bread|-00.52|+01.17|-00.03",
+          "object_type": "Bread"
+        },
+        {
+          "object_id": "Tomato|-00.39|+01.14|-00.81",
+          "object_type": "Tomato"
+        }
+      ],
+      "rgb_path": "outputs/walk_shelf_demo/walk_step_002_MoveRight.png",
+      "annotated_path": "outputs/walk_shelf_demo/walk_step_002_MoveRight_annotated.png",
+      "error_message": ""
+    },
+    {
+      "step_idx": 3,
+      "action": "MoveLeft",
+      "success": true,
+      "agent": {
+        "name": "agent",
+        "position": {
+          "x": -1.25,
+          "y": 0.900999128818512,
+          "z": -0.25
+        },
+        "rotation": {
+          "x": -0.0,
+          "y": 90.0489273071289,
+          "z": 0.0
+        },
+        "cameraHorizon": 25.0,
+        "isStanding": true,
+        "inHighFrictionArea": false,
+        "fpinColliderSize": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "fpinColliderWorldCenter": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "fpinColliderAgentRelativeCenter": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "visible_products": [
+        {
+          "object_id": "Apple|-00.47|+01.15|+00.48",
+          "object_type": "Apple"
+        },
+        {
+          "object_id": "Bread|-00.52|+01.17|-00.03",
+          "object_type": "Bread"
+        },
+        {
+          "object_id": "Tomato|-00.39|+01.14|-00.81",
+          "object_type": "Tomato"
+        }
+      ],
+      "rgb_path": "outputs/walk_shelf_demo/walk_step_003_MoveLeft.png",
+      "annotated_path": "outputs/walk_shelf_demo/walk_step_003_MoveLeft_annotated.png",
+      "error_message": ""
+    },
+    {
+      "step_idx": 4,
+      "action": "MoveLeft",
+      "success": true,
+      "agent": {
+        "name": "agent",
+        "position": {
+          "x": -1.25,
+          "y": 0.900999128818512,
+          "z": -0.0
+        },
+        "rotation": {
+          "x": -0.0,
+          "y": 90.0489273071289,
+          "z": 0.0
+        },
+        "cameraHorizon": 25.0,
+        "isStanding": true,
+        "inHighFrictionArea": false,
+        "fpinColliderSize": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "fpinColliderWorldCenter": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "fpinColliderAgentRelativeCenter": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "visible_products": [
+        {
+          "object_id": "Apple|-00.47|+01.15|+00.48",
+          "object_type": "Apple"
+        },
+        {
+          "object_id": "Bread|-00.52|+01.17|-00.03",
+          "object_type": "Bread"
+        },
+        {
+          "object_id": "Tomato|-00.39|+01.14|-00.81",
+          "object_type": "Tomato"
+        }
+      ],
+      "rgb_path": "outputs/walk_shelf_demo/walk_step_004_MoveLeft.png",
+      "annotated_path": "outputs/walk_shelf_demo/walk_step_004_MoveLeft_annotated.png",
+      "error_message": ""
+    },
+    {
+      "step_idx": 5,
+      "action": "MoveLeft",
+      "success": true,
+      "agent": {
+        "name": "agent",
+        "position": {
+          "x": -1.25,
+          "y": 0.900999128818512,
+          "z": 0.25
+        },
+        "rotation": {
+          "x": -0.0,
+          "y": 90.0489273071289,
+          "z": 0.0
+        },
+        "cameraHorizon": 25.0,
+        "isStanding": true,
+        "inHighFrictionArea": false,
+        "fpinColliderSize": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "fpinColliderWorldCenter": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "fpinColliderAgentRelativeCenter": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "visible_products": [
+        {
+          "object_id": "Apple|-00.47|+01.15|+00.48",
+          "object_type": "Apple"
+        },
+        {
+          "object_id": "Bread|-00.52|+01.17|-00.03",
+          "object_type": "Bread"
+        },
+        {
+          "object_id": "Tomato|-00.39|+01.14|-00.81",
+          "object_type": "Tomato"
+        }
+      ],
+      "rgb_path": "outputs/walk_shelf_demo/walk_step_005_MoveLeft.png",
+      "annotated_path": "outputs/walk_shelf_demo/walk_step_005_MoveLeft_annotated.png",
+      "error_message": ""
+    },
+    {
+      "step_idx": 6,
+      "action": "MoveRight",
+      "success": true,
+      "agent": {
+        "name": "agent",
+        "position": {
+          "x": -1.25,
+          "y": 0.900999128818512,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": -0.0,
+          "y": 90.0489273071289,
+          "z": 0.0
+        },
+        "cameraHorizon": 25.0,
+        "isStanding": true,
+        "inHighFrictionArea": false,
+        "fpinColliderSize": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "fpinColliderWorldCenter": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "fpinColliderAgentRelativeCenter": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "visible_products": [
+        {
+          "object_id": "Apple|-00.47|+01.15|+00.48",
+          "object_type": "Apple"
+        },
+        {
+          "object_id": "Bread|-00.52|+01.17|-00.03",
+          "object_type": "Bread"
+        },
+        {
+          "object_id": "Tomato|-00.39|+01.14|-00.81",
+          "object_type": "Tomato"
+        }
+      ],
+      "rgb_path": "outputs/walk_shelf_demo/walk_step_006_MoveRight.png",
+      "annotated_path": "outputs/walk_shelf_demo/walk_step_006_MoveRight_annotated.png",
+      "error_message": ""
+    }
+  ],
+  "gif_path": "outputs/walk_shelf_demo/walk_shelf_demo.gif"
+}

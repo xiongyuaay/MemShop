@@ -1,0 +1,54 @@
+sources:
+  internutopia:
+    role: read_only_asset_reference
+    ideas:
+      - humanoid robot appearance from H1/G1/GR1 examples
+      - tabletop and cabinet-style layouts from GRScenes and demos
+      - manipulation staging from Franka and GR1 teleoperation demos
+    not_used_as:
+      - runtime dependency
+      - simulator backend
+  sari:
+    role: read_only_retail_reference
+    ideas:
+      - three store layouts
+      - grocery product concepts
+      - barcode and expiration metadata
+      - self-checkout and scanner workflow
+      - hinge and sliding door interactions
+    not_used_as:
+      - runtime dependency
+      - simulator backend
+
+retail_concepts:
+  shelf_forms:
+    - open_counter_shelf
+    - closed_cabinet_shelf
+    - cold_fridge_shelf
+    - checkout_counter
+  product_metadata:
+    - barcode
+    - expiration_date
+    - price
+    - brand
+    - dietary_attribute
+  npc_roles:
+    - customer
+    - store_clerk
+  interaction_types:
+    - open_door
+    - slide_door
+    - scan_barcode
+    - place_in_cart
+
+asset_phase_priority:
+  phase_1:
+    use: AI2-THOR native pickupable objects and receptacles with semantic metadata.
+    blocks_demo: false
+  phase_2:
+    use: Extend product attributes, shelf zones, NPC roles, barcode, expiration, and checkout templates from asset references.
+    blocks_demo: false
+  phase_3:
+    use: Build or import static retail shelf and product visual assets only if visual realism is needed.
+    blocks_demo: false
+    runtime_dependency_policy: Do not make InternUtopia or SARI runtime dependencies.

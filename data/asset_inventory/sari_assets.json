@@ -1,0 +1,23 @@
+[
+  {
+    "asset_group": "store_layouts",
+    "source_path_or_doc": "sari-sandbox-env/README.md; sari-sandbox-env/Images/Store1.gif; sari-sandbox-env/Images/Store2.gif; sari-sandbox-env/Images/Store3.gif",
+    "retail_concept": "Three grocery store layouts with shelves and retail navigation paths.",
+    "usable_in_phase1": false,
+    "how_to_use_as_reference": "Use as layout inspiration for shelf region naming and future custom model specs."
+  },
+  {
+    "asset_group": "grocery_products",
+    "source_path_or_doc": "sari-sandbox-env/README.md",
+    "retail_concept": "250 grocery products with expiration dates and barcodes.",
+    "usable_in_phase1": true,
+    "how_to_use_as_reference": "Use barcode and expiration fields as semantic metadata in product configs."
+  },
+  {
+    "asset_group": "checkout_workflow",
+    "source_path_or_doc": "sari-sandbox-env/README.md",
+    "retail_concept": "Self-checkout counter and barcode scanner.",
+    "usable_in_phase1": true,
+    "how_to_use_as_reference": "Use as future NPC and place-object task template inspiration."
+  }
+]

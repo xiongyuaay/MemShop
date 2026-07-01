@@ -1,0 +1,7 @@
+{
+  "episode_id": "episode_000005",
+  "step_idx": 3,
+  "scene": "FloorPlan4",
+  "action": "answer_user",
+  "demo_placeholder": true
+}

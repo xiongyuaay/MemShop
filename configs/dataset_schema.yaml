@@ -1,0 +1,52 @@
+schema_version: 0.1.0
+required_fields:
+  - episode_id
+  - schema_version
+  - backend
+  - scene
+  - random_seed
+  - capability_family
+  - task_type
+  - prompt
+  - target
+  - episode_idx
+  - max_steps
+  - instruction
+  - initial_state
+  - product_catalog
+  - shelf_graph
+  - npc_dialogue
+  - high_level_plan
+  - sim_action_trace
+  - observations
+  - metrics
+  - success
+  - failure_reason
+  - provenance
+capability_family:
+  - object_loco_navigation
+  - social_loco_navigation
+  - loco_manipulation
+physical_control: not_supported
+high_level_actions:
+  - navigate_to_shelf
+  - open_receptacle
+  - search_object
+  - look_at
+  - ask_npc
+  - answer_user
+  - confirm_product
+  - recommend_substitute
+  - pick_object
+  - place_object
+  - compare_objects
+  - finish
+failure_reasons:
+  - no_matching_product
+  - ambiguous_instruction_unresolved
+  - navigation_failed
+  - object_not_visible
+  - pickup_failed
+  - placement_failed
+  - schema_invalid
+  - simulator_error

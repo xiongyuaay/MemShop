@@ -1,0 +1,115 @@
+{
+  "id": "resp_05d263af05c1b108006a43b2e463388193a4da89e5d536dce5",
+  "created_at": 1782821604.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "gpt-4o-mini",
+  "object": "response",
+  "output": [
+    {
+      "id": "msg_05d263af05c1b108006a43b2e6933c81938d93e0ecb81514fc",
+      "content": [
+        {
+          "annotations": [],
+          "text": "{\"action\":\"MoveAhead\",\"confidence\":0.9,\"question_text\":\"\",\"rationale\":\"The agent needs to move closer to the source shelf position to be within the pickup distance threshold for the red mug. Currently, it is too far to pick it up. Moving ahead will allow the agent to position itself properly to perform the next action of picking up the mug from the shelf if it becomes close enough during this movement.\"}",
+          "type": "output_text",
+          "logprobs": []
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message",
+      "phase": null
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "completed_at": 1782821607.0,
+  "conversation": null,
+  "max_output_tokens": null,
+  "max_tool_calls": null,
+  "moderation": null,
+  "previous_response_id": null,
+  "prompt": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "in_memory",
+  "reasoning": {
+    "context": null,
+    "effort": null,
+    "generate_summary": null,
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "name": "product_manipulation_decision",
+      "schema_": {
+        "additionalProperties": false,
+        "properties": {
+          "action": {
+            "enum": [
+              "MoveAhead",
+              "RotateLeft",
+              "RotateRight",
+              "LookUp",
+              "LookDown",
+              "Done",
+              "AskQuestion",
+              "PickupObject",
+              "DropObject"
+            ],
+            "type": "string"
+          },
+          "confidence": {
+            "maximum": 1,
+            "minimum": 0,
+            "type": "number"
+          },
+          "question_text": {
+            "type": "string"
+          },
+          "rationale": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "action",
+          "question_text",
+          "rationale",
+          "confidence"
+        ],
+        "type": "object"
+      },
+      "type": "json_schema",
+      "description": null,
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "top_logprobs": 0,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 35121,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 86,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 35207
+  },
+  "user": null,
+  "content_filters": null,
+  "frequency_penalty": 0.0,
+  "presence_penalty": 0.0,
+  "store": true
+}

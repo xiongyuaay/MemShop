@@ -1,0 +1,183 @@
+{
+  "scene": "FloorPlan1",
+  "shelf": {
+    "enabled": true,
+    "scene": "FloorPlan1",
+    "shelf_id": "ai2thor_shelf_FloorPlan1_000",
+    "source_object_type": "Shelf",
+    "source_object_ids": [
+      "Shelf|+01.75|+00.17|-02.56",
+      "Shelf|+01.75|+00.55|-02.56",
+      "Shelf|+01.75|+00.88|-02.56"
+    ],
+    "focus_object_id": "Shelf|+01.75|+00.55|-02.56",
+    "verified_probe": {
+      "position": {
+        "x": 1.75,
+        "y": 0.900999128818512,
+        "z": -1.25
+      },
+      "rotation": {
+        "x": 0,
+        "y": 179.9557435,
+        "z": 0
+      },
+      "horizon": 10,
+      "standing": true
+    },
+    "randomization": {
+      "action": "InitialRandomSpawn",
+      "randomSeed": 8,
+      "forceVisible": true,
+      "numPlacementAttempts": 5
+    },
+    "excluded_object_types": [
+      "Statue"
+    ],
+    "semantic_zone": "single_retail_shelf",
+    "description": "AI2-THOR native Shelf objects used as one bookcase-style retail shelf."
+  },
+  "shelf_randomization": {
+    "action": "InitialRandomSpawn",
+    "randomSeed": 8,
+    "forceVisible": true,
+    "numPlacementAttempts": 5
+  },
+  "excluded_object_types": [
+    "Statue"
+  ],
+  "view_policy": "cropped_single_shelf_focus",
+  "agent": {
+    "name": "agent",
+    "position": {
+      "x": 1.75,
+      "y": 0.900999128818512,
+      "z": -1.25
+    },
+    "rotation": {
+      "x": -0.0,
+      "y": 179.95574951171875,
+      "z": 0.0
+    },
+    "cameraHorizon": 10.0,
+    "isStanding": true,
+    "inHighFrictionArea": false,
+    "fpinColliderSize": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "fpinColliderWorldCenter": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "fpinColliderAgentRelativeCenter": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    }
+  },
+  "lastActionSuccess": true,
+  "errorMessage": "",
+  "objects_on_shelf": [
+    {
+      "objectId": "Potato|+01.96|+00.92|-02.53",
+      "objectType": "Potato",
+      "visible": true,
+      "pickupable": true,
+      "position": {
+        "x": 1.955718994140625,
+        "y": 0.9201722741127014,
+        "z": -2.5311102867126465
+      },
+      "parentReceptacles": [
+        "Shelf|+01.75|+00.88|-02.56"
+      ]
+    },
+    {
+      "objectId": "SoapBottle|+01.65|+00.89|-02.59",
+      "objectType": "SoapBottle",
+      "visible": true,
+      "pickupable": true,
+      "position": {
+        "x": 1.648657202720642,
+        "y": 0.886978268623352,
+        "z": -2.5893077850341797
+      },
+      "parentReceptacles": [
+        "Shelf|+01.75|+00.88|-02.56"
+      ]
+    },
+    {
+      "objectId": "Egg|+01.85|+00.92|-02.47",
+      "objectType": "Egg",
+      "visible": true,
+      "pickupable": true,
+      "position": {
+        "x": 1.8533676862716675,
+        "y": 0.9239336848258972,
+        "z": -2.4728991985321045
+      },
+      "parentReceptacles": [
+        "Shelf|+01.75|+00.88|-02.56"
+      ]
+    },
+    {
+      "objectId": "CreditCard|+01.75|+00.89|-02.59",
+      "objectType": "CreditCard",
+      "visible": true,
+      "pickupable": true,
+      "position": {
+        "x": 1.751010537147522,
+        "y": 0.8871889114379883,
+        "z": -2.589311122894287
+      },
+      "parentReceptacles": [
+        "Shelf|+01.75|+00.88|-02.56"
+      ]
+    },
+    {
+      "objectId": "Vase|+01.75|+00.56|-02.60",
+      "objectType": "Vase",
+      "visible": true,
+      "pickupable": true,
+      "position": {
+        "x": 1.7510099411010742,
+        "y": 0.5591073036193848,
+        "z": -2.6018028259277344
+      },
+      "parentReceptacles": [
+        "Shelf|+01.75|+00.55|-02.56"
+      ]
+    },
+    {
+      "objectId": "SaltShaker|+01.65|+00.56|-02.69",
+      "objectType": "SaltShaker",
+      "visible": true,
+      "pickupable": true,
+      "position": {
+        "x": 1.6473071575164795,
+        "y": 0.5591455101966858,
+        "z": -2.686392068862915
+      },
+      "parentReceptacles": [
+        "Shelf|+01.75|+00.55|-02.56"
+      ]
+    },
+    {
+      "objectId": "Spoon|+01.54|+00.56|-02.60",
+      "objectType": "Spoon",
+      "visible": true,
+      "pickupable": true,
+      "position": {
+        "x": 1.543609857559204,
+        "y": 0.5595215559005737,
+        "z": -2.6017961502075195
+      },
+      "parentReceptacles": [
+        "Shelf|+01.75|+00.55|-02.56"
+      ]
+    }
+  ]
+}

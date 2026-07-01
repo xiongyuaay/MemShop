@@ -1,0 +1,395 @@
+{
+  "source": "fbx_store_shelf_scene",
+  "scene_mode": "standalone_asset",
+  "renderer": "python_software_renderer",
+  "shelf_asset": {
+    "path": "/Users/yuaay/Documents/Embodied_AI/store-shelves/source/grocery_shelf.fbx",
+    "selected_module": "first",
+    "textures_dir": "/Users/yuaay/Documents/Embodied_AI/store-shelves/textures"
+  },
+  "environment": {
+    "room": null,
+    "floor": "simple matte ground plane",
+    "background": "plain studio background"
+  },
+  "product_source": {
+    "type": "ai2thor_common_object_categories",
+    "mesh_note": "Products use AI2-THOR common object categories represented by simple Python-generated meshes; this renderer does not extract Unity asset meshes."
+  },
+  "excluded_object_types": [
+    "Statue"
+  ],
+  "products": [
+    {
+      "object_type": "Bottle",
+      "shape": "cylinder",
+      "slot": {
+        "index": 0,
+        "row": 0,
+        "column": 0
+      }
+    },
+    {
+      "object_type": "SoapBottle",
+      "shape": "box",
+      "slot": {
+        "index": 1,
+        "row": 0,
+        "column": 1
+      }
+    },
+    {
+      "object_type": "Cup",
+      "shape": "cup",
+      "slot": {
+        "index": 2,
+        "row": 0,
+        "column": 2
+      }
+    },
+    {
+      "object_type": "Mug",
+      "shape": "mug",
+      "slot": {
+        "index": 3,
+        "row": 0,
+        "column": 3
+      }
+    },
+    {
+      "object_type": "Bowl",
+      "shape": "bowl",
+      "slot": {
+        "index": 4,
+        "row": 0,
+        "column": 4
+      }
+    },
+    {
+      "object_type": "Plate",
+      "shape": "plate",
+      "slot": {
+        "index": 5,
+        "row": 0,
+        "column": 5
+      }
+    },
+    {
+      "object_type": "Book",
+      "shape": "box",
+      "slot": {
+        "index": 6,
+        "row": 0,
+        "column": 6
+      }
+    },
+    {
+      "object_type": "Apple",
+      "shape": "sphere",
+      "slot": {
+        "index": 7,
+        "row": 0,
+        "column": 7
+      }
+    },
+    {
+      "object_type": "Tomato",
+      "shape": "sphere",
+      "slot": {
+        "index": 8,
+        "row": 1,
+        "column": 0
+      }
+    },
+    {
+      "object_type": "Potato",
+      "shape": "ellipsoid",
+      "slot": {
+        "index": 9,
+        "row": 1,
+        "column": 1
+      }
+    },
+    {
+      "object_type": "Egg",
+      "shape": "ellipsoid",
+      "slot": {
+        "index": 10,
+        "row": 1,
+        "column": 2
+      }
+    },
+    {
+      "object_type": "Bread",
+      "shape": "ellipsoid",
+      "slot": {
+        "index": 11,
+        "row": 1,
+        "column": 3
+      }
+    },
+    {
+      "object_type": "SaltShaker",
+      "shape": "cylinder",
+      "slot": {
+        "index": 12,
+        "row": 1,
+        "column": 4
+      }
+    },
+    {
+      "object_type": "Vase",
+      "shape": "vase",
+      "slot": {
+        "index": 13,
+        "row": 1,
+        "column": 5
+      }
+    },
+    {
+      "object_type": "Bottle",
+      "shape": "cylinder",
+      "slot": {
+        "index": 14,
+        "row": 1,
+        "column": 6
+      }
+    },
+    {
+      "object_type": "SoapBottle",
+      "shape": "box",
+      "slot": {
+        "index": 15,
+        "row": 1,
+        "column": 7
+      }
+    },
+    {
+      "object_type": "Cup",
+      "shape": "cup",
+      "slot": {
+        "index": 16,
+        "row": 2,
+        "column": 0
+      }
+    },
+    {
+      "object_type": "Mug",
+      "shape": "mug",
+      "slot": {
+        "index": 17,
+        "row": 2,
+        "column": 1
+      }
+    },
+    {
+      "object_type": "Bowl",
+      "shape": "bowl",
+      "slot": {
+        "index": 18,
+        "row": 2,
+        "column": 2
+      }
+    },
+    {
+      "object_type": "Plate",
+      "shape": "plate",
+      "slot": {
+        "index": 19,
+        "row": 2,
+        "column": 3
+      }
+    },
+    {
+      "object_type": "Book",
+      "shape": "box",
+      "slot": {
+        "index": 20,
+        "row": 2,
+        "column": 4
+      }
+    },
+    {
+      "object_type": "Apple",
+      "shape": "sphere",
+      "slot": {
+        "index": 21,
+        "row": 2,
+        "column": 5
+      }
+    },
+    {
+      "object_type": "Tomato",
+      "shape": "sphere",
+      "slot": {
+        "index": 22,
+        "row": 2,
+        "column": 6
+      }
+    },
+    {
+      "object_type": "Potato",
+      "shape": "ellipsoid",
+      "slot": {
+        "index": 23,
+        "row": 2,
+        "column": 7
+      }
+    },
+    {
+      "object_type": "Egg",
+      "shape": "ellipsoid",
+      "slot": {
+        "index": 24,
+        "row": 3,
+        "column": 0
+      }
+    },
+    {
+      "object_type": "Bread",
+      "shape": "ellipsoid",
+      "slot": {
+        "index": 25,
+        "row": 3,
+        "column": 1
+      }
+    },
+    {
+      "object_type": "SaltShaker",
+      "shape": "cylinder",
+      "slot": {
+        "index": 26,
+        "row": 3,
+        "column": 2
+      }
+    },
+    {
+      "object_type": "Vase",
+      "shape": "vase",
+      "slot": {
+        "index": 27,
+        "row": 3,
+        "column": 3
+      }
+    },
+    {
+      "object_type": "Bottle",
+      "shape": "cylinder",
+      "slot": {
+        "index": 28,
+        "row": 3,
+        "column": 4
+      }
+    },
+    {
+      "object_type": "SoapBottle",
+      "shape": "box",
+      "slot": {
+        "index": 29,
+        "row": 3,
+        "column": 5
+      }
+    },
+    {
+      "object_type": "Cup",
+      "shape": "cup",
+      "slot": {
+        "index": 30,
+        "row": 3,
+        "column": 6
+      }
+    },
+    {
+      "object_type": "Mug",
+      "shape": "mug",
+      "slot": {
+        "index": 31,
+        "row": 3,
+        "column": 7
+      }
+    },
+    {
+      "object_type": "Bowl",
+      "shape": "bowl",
+      "slot": {
+        "index": 32,
+        "row": 4,
+        "column": 0
+      }
+    },
+    {
+      "object_type": "Plate",
+      "shape": "plate",
+      "slot": {
+        "index": 33,
+        "row": 4,
+        "column": 1
+      }
+    },
+    {
+      "object_type": "Book",
+      "shape": "box",
+      "slot": {
+        "index": 34,
+        "row": 4,
+        "column": 2
+      }
+    },
+    {
+      "object_type": "Apple",
+      "shape": "sphere",
+      "slot": {
+        "index": 35,
+        "row": 4,
+        "column": 3
+      }
+    },
+    {
+      "object_type": "Tomato",
+      "shape": "sphere",
+      "slot": {
+        "index": 36,
+        "row": 4,
+        "column": 4
+      }
+    },
+    {
+      "object_type": "Potato",
+      "shape": "ellipsoid",
+      "slot": {
+        "index": 37,
+        "row": 4,
+        "column": 5
+      }
+    },
+    {
+      "object_type": "Egg",
+      "shape": "ellipsoid",
+      "slot": {
+        "index": 38,
+        "row": 4,
+        "column": 6
+      }
+    },
+    {
+      "object_type": "Bread",
+      "shape": "ellipsoid",
+      "slot": {
+        "index": 39,
+        "row": 4,
+        "column": 7
+      }
+    }
+  ],
+  "output_dir": "/Users/yuaay/Documents/Embodied_AI/retail_thor_demo/outputs/fbx_store_shelf_scene",
+  "width": 1200,
+  "height": 800,
+  "mesh_count": 5,
+  "screenshots": [
+    {
+      "scene_id": "fbx_store_shelf_front",
+      "path": "fbx_store_shelf_products.png",
+      "caption": "Standalone store-shelves FBX asset filled with AI2-THOR common-object products."
+    }
+  ]
+}

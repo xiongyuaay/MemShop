@@ -1,0 +1,108 @@
+{
+  "id": "resp_0b07fc99ed84e511006a43a2d1f5588193b35499188c83c8b2",
+  "created_at": 1782817489.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "gpt-4o-mini",
+  "object": "response",
+  "output": [
+    {
+      "id": "msg_0b07fc99ed84e511006a43a2d393348193a2dfaf2680692710",
+      "content": [
+        {
+          "annotations": [],
+          "text": "{\"action\":\"MoveAhead\",\"confidence\":0.9,\"rationale\":\"Moving ahead will bring the agent closer to the blue cylindrical products, allowing for better visual confirmation of the target.\"}",
+          "type": "output_text",
+          "logprobs": []
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message",
+      "phase": null
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "completed_at": 1782817492.0,
+  "conversation": null,
+  "max_output_tokens": null,
+  "max_tool_calls": null,
+  "moderation": null,
+  "previous_response_id": null,
+  "prompt": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "in_memory",
+  "reasoning": {
+    "context": null,
+    "effort": null,
+    "generate_summary": null,
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "name": "navigation_decision",
+      "schema_": {
+        "additionalProperties": false,
+        "properties": {
+          "action": {
+            "enum": [
+              "MoveAhead",
+              "RotateLeft",
+              "RotateRight",
+              "LookUp",
+              "LookDown",
+              "Done"
+            ],
+            "type": "string"
+          },
+          "confidence": {
+            "maximum": 1,
+            "minimum": 0,
+            "type": "number"
+          },
+          "rationale": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "action",
+          "rationale",
+          "confidence"
+        ],
+        "type": "object"
+      },
+      "type": "json_schema",
+      "description": null,
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "top_logprobs": 0,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 26001,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 39,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 26040
+  },
+  "user": null,
+  "content_filters": null,
+  "frequency_penalty": 0.0,
+  "presence_penalty": 0.0,
+  "store": true
+}

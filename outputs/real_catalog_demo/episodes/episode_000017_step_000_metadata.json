@@ -1,0 +1,7 @@
+{
+  "episode_id": "episode_000017",
+  "step_idx": 0,
+  "scene": "FloorPlan2",
+  "action": "navigate_to_shelf",
+  "demo_placeholder": true
+}
